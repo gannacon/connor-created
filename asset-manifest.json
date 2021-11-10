@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/%7Bconnor-created%7D/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/%7Bconnor-created%7D/static/js/main.c23139eb.chunk.js",
+    "main.js.map": "/%7Bconnor-created%7D/static/js/main.c23139eb.chunk.js.map",
+    "runtime-main.js": "/%7Bconnor-created%7D/static/js/runtime-main.80f1f305.js",
+    "runtime-main.js.map": "/%7Bconnor-created%7D/static/js/runtime-main.80f1f305.js.map",
+    "static/js/2.8c6b046f.chunk.js": "/%7Bconnor-created%7D/static/js/2.8c6b046f.chunk.js",
+    "static/js/2.8c6b046f.chunk.js.map": "/%7Bconnor-created%7D/static/js/2.8c6b046f.chunk.js.map",
+    "static/js/3.5478e9e2.chunk.js": "/%7Bconnor-created%7D/static/js/3.5478e9e2.chunk.js",
+    "static/js/3.5478e9e2.chunk.js.map": "/%7Bconnor-created%7D/static/js/3.5478e9e2.chunk.js.map",
+    "index.html": "/%7Bconnor-created%7D/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/%7Bconnor-created%7D/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.8c6b046f.chunk.js.LICENSE.txt": "/%7Bconnor-created%7D/static/js/2.8c6b046f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/%7Bconnor-created%7D/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80f1f305.js",
+    "static/js/2.8c6b046f.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.c23139eb.chunk.js"
+  ]
+}
