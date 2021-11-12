@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/connor-created/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/connor-created/static/js/main.ed17fe51.chunk.js",
-    "main.js.map": "/connor-created/static/js/main.ed17fe51.chunk.js.map",
-    "runtime-main.js": "/connor-created/static/js/runtime-main.4492423f.js",
-    "runtime-main.js.map": "/connor-created/static/js/runtime-main.4492423f.js.map",
-    "static/js/2.2ba66421.chunk.js": "/connor-created/static/js/2.2ba66421.chunk.js",
-    "static/js/2.2ba66421.chunk.js.map": "/connor-created/static/js/2.2ba66421.chunk.js.map",
-    "static/js/3.cdb3f7ce.chunk.js": "/connor-created/static/js/3.cdb3f7ce.chunk.js",
-    "static/js/3.cdb3f7ce.chunk.js.map": "/connor-created/static/js/3.cdb3f7ce.chunk.js.map",
+    "main.js": "/connor-created/static/js/main.263f3870.chunk.js",
+    "main.js.map": "/connor-created/static/js/main.263f3870.chunk.js.map",
+    "runtime-main.js": "/connor-created/static/js/runtime-main.9a3b8dee.js",
+    "runtime-main.js.map": "/connor-created/static/js/runtime-main.9a3b8dee.js.map",
+    "static/js/2.79db69f7.chunk.js": "/connor-created/static/js/2.79db69f7.chunk.js",
+    "static/js/2.79db69f7.chunk.js.map": "/connor-created/static/js/2.79db69f7.chunk.js.map",
+    "static/js/3.a404310a.chunk.js": "/connor-created/static/js/3.a404310a.chunk.js",
+    "static/js/3.a404310a.chunk.js.map": "/connor-created/static/js/3.a404310a.chunk.js.map",
     "index.html": "/connor-created/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/connor-created/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.2ba66421.chunk.js.LICENSE.txt": "/connor-created/static/js/2.2ba66421.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/connor-created/static/media/logo.6ce24c58.svg"
+    "static/js/2.79db69f7.chunk.js.LICENSE.txt": "/connor-created/static/js/2.79db69f7.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/connor-created/static/media/logo.6ce24c58.svg",
+    "static/media/portrait.e6f6b430.jpg": "/connor-created/static/media/portrait.e6f6b430.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4492423f.js",
-    "static/js/2.2ba66421.chunk.js",
+    "static/js/runtime-main.9a3b8dee.js",
+    "static/js/2.79db69f7.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.ed17fe51.chunk.js"
+    "static/js/main.263f3870.chunk.js"
   ]
 }
