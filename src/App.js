@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { orange } from "@mui/material/colors";
@@ -49,9 +49,9 @@ function display() {
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <ThemeProvider theme={theme}>{display()}</ThemeProvider>
-      </Router>
+      </HashRouter>
     </>
   );
 }
