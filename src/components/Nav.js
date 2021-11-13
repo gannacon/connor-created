@@ -129,13 +129,13 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItemLink href="/">
+          <ListItemLink href="/#/">
             <ListItemText primary="Home" />
           </ListItemLink>
-          <ListItemLink href="/projects">
+          <ListItemLink href="/#/projects">
             <ListItemText primary="Projects" />
           </ListItemLink>
-          <ListItemLink href="/gallery">
+          <ListItemLink href="/#/gallery">
             <ListItemText primary="Gallery" />
           </ListItemLink>
         </List>

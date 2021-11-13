@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { orange } from "@mui/material/colors";
@@ -33,28 +33,35 @@ const theme = createTheme({
   },
 });
 
-function display() {
+// function display() {
+//   return (
+//     <>
+//       {/* <Button variant="contained">Hello World</Button> */}
+//       <Nav />
+//       <Routes>
+//         <Route exact path="gallery" element={<Gallery />} />
+//         {/* <Route exact path="footer" element={<Footer />} /> */}
+//         <Route exact path="/" element={<Home />} />
+//       </Routes>
+//     </>
+//   );
+// }
+
+export default function App() {
   return (
     <>
-      {/* <Button variant="contained">Hello World</Button> */}
-      <Nav />
-      <Routes>
-        <Route exact path="gallery" element={<Gallery />} />
-        {/* <Route exact path="footer" element={<Footer />} /> */}
-        <Route exact path="/" element={<Home />} />
-      </Routes>
+      <ThemeProvider theme={theme}>
+        {" "}
+        <>
+          {/* <Button variant="contained">Hello World</Button> */}
+          <Nav />
+          <Routes>
+            <Route exact path="gallery" element={<Gallery />} />
+            {/* <Route exact path="footer" element={<Footer />} /> */}
+            <Route exact path="/" element={<Home />} />
+          </Routes>
+        </>
+      </ThemeProvider>
     </>
   );
 }
-
-function App() {
-  return (
-    <>
-      <Router>
-        <ThemeProvider theme={theme}>{display()}</ThemeProvider>
-      </Router>
-    </>
-  );
-}
-
-export default App;
