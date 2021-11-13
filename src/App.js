@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { orange } from "@mui/material/colors";
