@@ -39,8 +39,8 @@ function display() {
       {/* <Button variant="contained">Hello World</Button> */}
       <Nav />
       <Routes>
-        <Route path="gallery" element={<Gallery />} />
-        <Route path="home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );
