@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { orange } from "@mui/material/colors";
@@ -39,8 +39,9 @@ function display() {
       {/* <Button variant="contained">Hello World</Button> */}
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route exact path="gallery" element={<Gallery />} />
+        {/* <Route exact path="footer" element={<Footer />} /> */}
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </>
   );
@@ -49,9 +50,9 @@ function display() {
 function App() {
   return (
     <>
-      <HashRouter>
+      <Router>
         <ThemeProvider theme={theme}>{display()}</ThemeProvider>
-      </HashRouter>
+      </Router>
     </>
   );
 }

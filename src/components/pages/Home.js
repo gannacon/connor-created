@@ -19,7 +19,7 @@ const divStyle = {
   backgroundImage: `url(${Portrait})`,
   backgroundSize: "cover",
 };
-export default function BasicGrid() {
+export default function Home() {
   return (
     <>
       <div className="Component" style={divStyle}>
