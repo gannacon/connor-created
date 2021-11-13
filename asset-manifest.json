@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/connor-created/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/connor-created/static/js/main.e65bca56.chunk.js",
-    "main.js.map": "/connor-created/static/js/main.e65bca56.chunk.js.map",
-    "runtime-main.js": "/connor-created/static/js/runtime-main.e4f08845.js",
-    "runtime-main.js.map": "/connor-created/static/js/runtime-main.e4f08845.js.map",
-    "static/js/2.29f3e711.chunk.js": "/connor-created/static/js/2.29f3e711.chunk.js",
-    "static/js/2.29f3e711.chunk.js.map": "/connor-created/static/js/2.29f3e711.chunk.js.map",
-    "static/js/3.b21b38c2.chunk.js": "/connor-created/static/js/3.b21b38c2.chunk.js",
-    "static/js/3.b21b38c2.chunk.js.map": "/connor-created/static/js/3.b21b38c2.chunk.js.map",
-    "index.html": "/connor-created/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/connor-created/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.29f3e711.chunk.js.LICENSE.txt": "/connor-created/static/js/2.29f3e711.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/connor-created/static/media/logo.6ce24c58.svg",
-    "static/media/portrait.e6f6b430.jpg": "/connor-created/static/media/portrait.e6f6b430.jpg"
+    "main.css": "/connorcreated.com/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/connorcreated.com/static/js/main.e65bca56.chunk.js",
+    "main.js.map": "/connorcreated.com/static/js/main.e65bca56.chunk.js.map",
+    "runtime-main.js": "/connorcreated.com/static/js/runtime-main.13565848.js",
+    "runtime-main.js.map": "/connorcreated.com/static/js/runtime-main.13565848.js.map",
+    "static/js/2.29f3e711.chunk.js": "/connorcreated.com/static/js/2.29f3e711.chunk.js",
+    "static/js/2.29f3e711.chunk.js.map": "/connorcreated.com/static/js/2.29f3e711.chunk.js.map",
+    "static/js/3.b21b38c2.chunk.js": "/connorcreated.com/static/js/3.b21b38c2.chunk.js",
+    "static/js/3.b21b38c2.chunk.js.map": "/connorcreated.com/static/js/3.b21b38c2.chunk.js.map",
+    "index.html": "/connorcreated.com/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/connorcreated.com/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.29f3e711.chunk.js.LICENSE.txt": "/connorcreated.com/static/js/2.29f3e711.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/connorcreated.com/static/media/logo.6ce24c58.svg",
+    "static/media/portrait.e6f6b430.jpg": "/connorcreated.com/static/media/portrait.e6f6b430.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e4f08845.js",
+    "static/js/runtime-main.13565848.js",
     "static/js/2.29f3e711.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.e65bca56.chunk.js"
