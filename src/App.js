@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
+import ComingSoon from "./components/pages/ComingSoon";
 
 import { Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
@@ -16,7 +17,7 @@ import { StayPrimaryLandscape } from "@mui/icons-material";
 
 const theme = createTheme({
   palette: {
-    type: "dark",
+    mode: "dark",
     primary: {
       main: "#FAFAFA",
     },
@@ -33,34 +34,29 @@ const theme = createTheme({
   },
 });
 
-// function display() {
+// export default function App() {
 //   return (
 //     <>
-//       {/* <Button variant="contained">Hello World</Button> */}
-//       <Nav />
-//       <Routes>
-//         <Route exact path="gallery" element={<Gallery />} />
-//         {/* <Route exact path="footer" element={<Footer />} /> */}
-//         <Route exact path="/" element={<Home />} />
-//       </Routes>
+//       <ThemeProvider theme={theme}>
+//         {" "}
+//         <>
+//           {/* <Button variant="contained">Hello World</Button> */}
+//           <Nav />
+//           <Routes>
+//             <Route exact path="gallery" element={<Gallery />} />
+//             {/* <Route exact path="footer" element={<Footer />} /> */}
+//             <Route exact path="/" element={<Home />} />
+//           </Routes>
+//         </>
+//       </ThemeProvider>
 //     </>
 //   );
 // }
-
 export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        {" "}
-        <>
-          {/* <Button variant="contained">Hello World</Button> */}
-          <Nav />
-          <Routes>
-            <Route exact path="gallery" element={<Gallery />} />
-            {/* <Route exact path="footer" element={<Footer />} /> */}
-            <Route exact path="/" element={<Home />} />
-          </Routes>
-        </>
+        <ComingSoon />
       </ThemeProvider>
     </>
   );
