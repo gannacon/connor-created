@@ -5,12 +5,12 @@ import Nav from "./components/Nav";
 import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 import { Routes, Route } from "react-router-dom";
-
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import { white, blueGrey, grey } from "@mui/material/colors";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -26,11 +26,8 @@ function DarkButton() {
         justifyContent: "center",
         bgcolor: "background.default",
         color: "text.primary",
-        borderRadius: 1,
-        p: 3,
       }}
     >
-      {theme.palette.mode} mode
       <IconButton
         sx={{ ml: 1 }}
         onClick={colorMode.toggleColorMode}
@@ -62,6 +59,29 @@ export default function ToggleColorMode() {
       createTheme({
         palette: {
           mode,
+          ...(mode === "light"
+            ? {
+                // palette values for light mode
+                primary: grey,
+                divider: grey[200],
+                text: {
+                  primary: grey[900],
+                  secondary: grey[800],
+                },
+              }
+            : {
+                // palette values for dark mode
+                primary: blueGrey,
+                divider: blueGrey[700],
+                background: {
+                  default: blueGrey[900],
+                  paper: blueGrey[900],
+                },
+                text: {
+                  primary: "#fff",
+                  secondary: blueGrey[500],
+                },
+              }),
         },
       }),
     [mode]
