@@ -19,27 +19,10 @@ const divStyle = {
   backgroundImage: `url(${Portrait})`,
   backgroundSize: "cover",
 };
+
 export default function Home() {
   return (
     <>
-      <div className="Component" style={divStyle}>
-        <Typography
-          variant="h6"
-          style={{
-            textAlign: "right",
-            position: "absolute",
-            left: "50%",
-            top: "75%",
-            transform: "translate(-40%, -25%)",
-          }}
-          color="white"
-          component="div"
-        >
-          Welcome! This is my little space on the internet for creating and
-          displaying everything I do.
-        </Typography>
-      </div>
-
       <Grid container spacing={2}>
         <Grid item xs={6} md={8}>
           <Item>xs=6 md=8</Item>

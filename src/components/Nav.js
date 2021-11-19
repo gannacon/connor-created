@@ -13,11 +13,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { Link } from "react-router-dom";
+// import DarkButton from "./pages/helpers/DarkMode";
 
 const drawerWidth = 240;
 
@@ -85,11 +82,7 @@ export default function PersistentDrawerLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        style={{ background: "transparent", boxShadow: "none" }}
-        open={open}
-      >
+      <AppBar position="fixed" style={{ boxShadow: "none" }} open={open}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -119,6 +112,7 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader>
+          {/* <DarkButton /> */}
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -141,9 +135,6 @@ export default function PersistentDrawerLeft() {
         </List>
 
         <Divider />
-        <List>
-          <Link to="/home">Home</Link>
-        </List>
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
