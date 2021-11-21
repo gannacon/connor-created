@@ -2,15 +2,16 @@ import * as React from "react";
 
 import "./App.css";
 import Nav from "./components/Nav";
-import Gallery from "./components/pages/Gallery";
-import Home from "./components/pages/Home";
+import Footer from "./components/Footer";
+import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { white, blueGrey, grey } from "@mui/material/colors";
+import { blueGrey, grey } from "@mui/material/colors";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -26,10 +27,12 @@ function DarkButton() {
         justifyContent: "center",
         bgcolor: "background.default",
         color: "text.primary",
+        py: 2,
       }}
     >
+      {theme.palette.mode} mode
       <IconButton
-        sx={{ ml: 1 }}
+        sx={{ ml: 0 }}
         onClick={colorMode.toggleColorMode}
         color="inherit"
       >
@@ -96,6 +99,7 @@ export default function ToggleColorMode() {
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
         </Routes>
+        <Footer />
         <DarkButton />
       </ThemeProvider>
     </ColorModeContext.Provider>
