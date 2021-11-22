@@ -5,26 +5,27 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import Portrait from "../assets/images/portrait.jpg";
+import Banner from "../assets/images/banner.jpg";
 
 function MainFeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Paper
+    <Box
       sx={{
         position: "relative",
         backgroundColor: "grey.800",
         color: "#fff",
         mb: 4,
+        dropShadow: "none",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        backgroundImage: `url(${Portrait})`,
+        backgroundImage: `url(${Banner})`,
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: "none" }} src={Portrait} alt="main blog post" />}
+      {<img style={{ display: "none" }} src={Banner} alt="KC skyline" />}
       <Box
         sx={{
           position: "absolute",
@@ -50,36 +51,27 @@ function MainFeaturedPost(props) {
               color="inherit"
               gutterBottom
             >
-              Welcome!
-              <br />
-              This is my creative space.
+              Welcome to my creative space
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
-              This is where I showcase my web development and photography
+              Here is where I will showcase my web development and photography
               projects. This was website was coded by me using React.
             </Typography>
-            <Link
-              variant="subtitle1"
-              href="https://github.com/gannacon/connor-created"
-              target="_blanks"
-            >
-              GitHub Repo
-            </Link>
+            <Typography variant="subtitle1">
+              Checkout this page's{" "}
+              <Link
+                variant="subtitle1"
+                href="https://github.com/gannacon/connor-created"
+                target="_blanks"
+              >
+                Repo
+              </Link>
+            </Typography>
           </Box>
         </Grid>
       </Grid>
-    </Paper>
+    </Box>
   );
 }
-
-MainFeaturedPost.propTypes = {
-  post: PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageText: PropTypes.string.isRequired,
-    linkText: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export default MainFeaturedPost;

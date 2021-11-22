@@ -3,7 +3,7 @@ import * as React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Gallery from "./pages/Gallery";
+import Photography from "./pages/Photography";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
@@ -95,7 +95,7 @@ export default function ToggleColorMode() {
       <ThemeProvider theme={theme}>
         <Nav />
         <Routes>
-          <Route exact path="gallery" element={<Gallery />} />
+          <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
         </Routes>

@@ -29,7 +29,7 @@ function FeaturedPost() {
             </CardContent>
             <CardMedia
               component="img"
-              sx={{ width: 160, display: { xs: "none", sm: "block" } }}
+              sx={{ width: 160, display: { sm: "block" } }}
               image={"https://picsum.photos/200/300"}
               alt="Filler text"
             />
@@ -55,7 +55,7 @@ function FeaturedPost() {
             </CardContent>
             <CardMedia
               component="img"
-              sx={{ width: 160, display: { xs: "none", sm: "block" } }}
+              sx={{ width: 160, display: { sm: "block" } }}
               image={"https://picsum.photos/200/300"}
               alt="Filler text"
             />

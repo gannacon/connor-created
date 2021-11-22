@@ -14,7 +14,8 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import Button from "@mui/material/Button";
+import logoIcon from "../pages/assets/images/logoIcon.png";
+
 const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -81,24 +82,42 @@ export default function PersistentDrawerLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" style={{ background: "#fff" }} open={open}>
-        <Toolbar>
+      <AppBar
+        position="fixed"
+        elevation={0}
+        style={{ background: "transparent" }}
+        // sx={{ top: "auto", bottom: 0 }}
+        open={open}
+      >
+        <Toolbar variant="dense">
           <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
+            style={{ color: "#000", background: "#fff" }}
+            sx={{ boxShadow: 3, mr: 2, ...(open && { display: "none" }) }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div"></Typography>
+          <IconButton edge="end" color="inherit">
+            <Box
+              component="img"
+              sx={{
+                height: 38,
+              }}
+              alt="CG Logo"
+              src={logoIcon}
+            />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Drawer
         sx={{
           width: drawerWidth,
           flexShrink: 0,
+
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
@@ -126,8 +145,8 @@ export default function PersistentDrawerLeft() {
           <ListItemLink href="/#/projects">
             <ListItemText primary="Projects" />
           </ListItemLink>
-          <ListItemLink href="/#/gallery">
-            <ListItemText primary="Gallery" />
+          <ListItemLink href="/#/photography">
+            <ListItemText primary="Photography" />
           </ListItemLink>
         </List>
 
