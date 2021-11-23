@@ -65,7 +65,11 @@ export default function ToggleColorMode() {
           ...(mode === "light"
             ? {
                 // palette values for light mode
-                primary: grey,
+                primary: {
+                  light: grey[50],
+                  main: "#fff",
+                  contrastText: "#000",
+                },
                 divider: grey[200],
                 text: {
                   primary: grey[900],

@@ -5,18 +5,18 @@ import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import logoIcon from "../pages/assets/images/logoIcon.png";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import PropTypes from "prop-types";
+import DrawerContent from "./assets/DrawerContent";
 
-const drawerWidth = 240;
+const drawerWidth = 220;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -60,14 +60,38 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
-  justifyContent: "flex-end",
+  justifyContent: "flex-start",
 }));
 
 function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
 
-export default function PersistentDrawerLeft() {
+function ElevationScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined,
+  });
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
+
+ElevationScroll.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+export default function PersistentDrawerLeft(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -82,37 +106,42 @@ export default function PersistentDrawerLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        elevation={0}
-        style={{ background: "transparent" }}
-        // sx={{ top: "auto", bottom: 0 }}
-        open={open}
-      >
-        <Toolbar variant="dense">
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            style={{ color: "#000", background: "#fff" }}
-            sx={{ boxShadow: 3, mr: 2, ...(open && { display: "none" }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div"></Typography>
-          <IconButton edge="end" color="inherit">
-            <Box
-              component="img"
-              sx={{
-                height: 38,
-              }}
-              alt="CG Logo"
-              src={logoIcon}
-            />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+      <ElevationScroll {...props}>
+        <AppBar
+          position="fixed"
+          elevation={0}
+          style={{ ifbackground: "#fff" }}
+          // sx={{ top: "auto", bottom: 0 }}
+          open={open}
+        >
+          <Toolbar variant="dense">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{ mr: 2, ...(open && { display: "none" }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <IconButton color="inherit">
+              <Box
+                component="img"
+                sx={{
+                  height: 38,
+                  mr: 2,
+                }}
+                alt="CG Logo"
+                src={logoIcon}
+              />
+            </IconButton>
+
+            <Typography variant="h6" noWrap component="div">
+              Connor Created
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </ElevationScroll>
       <Drawer
         sx={{
           width: drawerWidth,
@@ -128,7 +157,6 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader>
-          {/* <DarkButton /> */}
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -136,21 +164,11 @@ export default function PersistentDrawerLeft() {
               <ChevronRightIcon />
             )}
           </IconButton>
+          <Typography variant="h6" anchor="right">
+            How can I help?
+          </Typography>
         </DrawerHeader>
-        <Divider />
-        <List>
-          <ListItemLink href="/#/">
-            <ListItemText primary="Home" />
-          </ListItemLink>
-          <ListItemLink href="/#/projects">
-            <ListItemText primary="Projects" />
-          </ListItemLink>
-          <ListItemLink href="/#/photography">
-            <ListItemText primary="Photography" />
-          </ListItemLink>
-        </List>
-
-        <Divider />
+        <DrawerContent />
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
