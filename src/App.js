@@ -3,7 +3,7 @@ import * as React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Photography from "./pages/Photography";
+import Lifestyle from "./pages/Lifestyle";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
@@ -27,7 +27,6 @@ function DarkButton() {
         justifyContent: "center",
         bgcolor: "background.default",
         color: "text.primary",
-        py: 2,
       }}
     >
       {theme.palette.mode} mode
@@ -99,7 +98,7 @@ export default function ToggleColorMode() {
       <ThemeProvider theme={theme}>
         <Nav />
         <Routes>
-          <Route exact path="photography" element={<Photography />} />
+          <Route exact path="lifestyle" element={<Lifestyle />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
         </Routes>

@@ -15,6 +15,7 @@ import logoIcon from "../pages/assets/images/logoIcon.png";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PropTypes from "prop-types";
 import DrawerContent from "./assets/DrawerContent";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 
 const drawerWidth = 220;
 
@@ -91,6 +92,7 @@ ElevationScroll.propTypes = {
    */
   window: PropTypes.func,
 };
+
 export default function PersistentDrawerLeft(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -129,16 +131,17 @@ export default function PersistentDrawerLeft(props) {
                 component="img"
                 sx={{
                   height: 38,
-                  mr: 2,
+                  mr: 0.1,
+                  ml: 0.1,
+                  mt: 0.1,
+                  mb: 0.1,
                 }}
                 alt="CG Logo"
                 src={logoIcon}
               />
             </IconButton>
 
-            <Typography variant="h6" noWrap component="div">
-              Connor Created
-            </Typography>
+            <Typography variant="h6">Connor Created</Typography>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
@@ -156,18 +159,20 @@ export default function PersistentDrawerLeft(props) {
         anchor="left"
         open={open}
       >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-          <Typography variant="h6" anchor="right">
-            How can I help?
-          </Typography>
-        </DrawerHeader>
+        <ClickAwayListener onClickAway={handleDrawerClose}>
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+            <Typography variant="h6" anchor="right">
+              How can I help?
+            </Typography>
+          </DrawerHeader>
+        </ClickAwayListener>
         <DrawerContent />
       </Drawer>
       <Main open={open}>

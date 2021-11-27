@@ -82,6 +82,9 @@ export default function CustomizedAccordions() {
             <ListItemText primary="Photography" />
           </AccordionSummary>
           <AccordionDetails>
+            <ListItemLink href="/#/lifestyle">
+              <ListItemText primary="Lifestyle" />
+            </ListItemLink>
             <ListItemLink href="/#/photography">
               <ListItemText primary="Photography" />
             </ListItemLink>
