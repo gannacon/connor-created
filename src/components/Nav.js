@@ -12,11 +12,12 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import CGLogo from "../pages/assets/images/cgiconlogo.png";
-import LogoIconb from "../pages/assets/images/logob.png";
+import LogoIcon from "../pages/assets/images/logo.svg";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PropTypes from "prop-types";
 import DrawerContent from "./assets/DrawerContent";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Icon from "@mui/material/Icon";
 
 const drawerWidth = 220;
 
@@ -131,16 +132,18 @@ export default function PersistentDrawerLeft(props) {
             <Typography margin="auto" variant="h5">
               CONNOR CREATED
             </Typography>
+
             <Box
+              color="#fff"
               component="img"
               sx={{
-                mr: 0.1,
-                ml: 1,
-                mt: 2,
+                mt: 1,
                 mb: 1,
+                width: 40,
+                height: 40,
               }}
               alt="CG Logo"
-              src={CGLogo}
+              src={LogoIcon}
             />
           </Toolbar>
         </AppBar>

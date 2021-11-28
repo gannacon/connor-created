@@ -25,19 +25,22 @@ import p16 from "./assets/people/p16.jpg";
 export default function People() {
   return (
     <Box sx={{ maxWidth: 1080, margin: "auto" }}>
-      <Typography align="center" variant="h4">
-        people
-      </Typography>
-
-      <Divider>
-        <Typography align="center" variant="h6">
-          peo &#8226; ple
+      <Box sx={{ maxWidth: 800, margin: "auto" }}>
+        <Typography align="center" variant="h4">
+          people
         </Typography>
-      </Divider>
-      <Typography align="center" variant="h6" width="500">
-        a body of persons that are united by a common culture, tradition, or
-        sense of kinship
-      </Typography>
+
+        <Divider>
+          <Typography align="center" variant="h6">
+            peo &#8226; ple
+          </Typography>
+        </Divider>
+        <Typography align="center" variant="h6" width="500" ml="10px" mr="10px">
+          a body of persons that are united by a common culture, tradition, or
+          sense of kinship
+        </Typography>
+      </Box>
+
       <ImageList variant="masonry" cols={1}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
