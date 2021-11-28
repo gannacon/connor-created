@@ -129,7 +129,7 @@ export default function PersistentDrawerLeft(props) {
             </IconButton>
 
             <Typography margin="auto" variant="h5">
-              connor created
+              CONNOR CREATED
             </Typography>
             <Box
               component="img"

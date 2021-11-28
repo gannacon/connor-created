@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Lifestyle from "./pages/Lifestyle";
 import People from "./pages/People";
+import Commercial from "./pages/Commercial";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
@@ -93,6 +94,7 @@ export default function ToggleColorMode() {
         },
         typography: {
           fontFamily: [
+            "Cormorant Garamond",
             "-apple-system",
             "BlinkMacSystemFont",
             '"Segoe UI"',
@@ -116,6 +118,7 @@ export default function ToggleColorMode() {
         <Routes>
           <Route exact path="lifestyle" element={<Lifestyle />} />
           <Route exact path="people" element={<People />} />
+          <Route exact path="commercial" element={<Commercial />} />
           <Route exact path="contact" element={<Contact />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />

@@ -3,15 +3,42 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
-import ColtonNatalie from "./assets/people/ColtonNatalie.jpg";
+import Divider from "@mui/material/Divider";
+
+import p1 from "./assets/people/p1.jpg";
+import p2 from "./assets/people/p2.jpg";
+import p3 from "./assets/people/p3.jpg";
+import p4 from "./assets/people/p4.jpg";
+// import p5 from "./assets/people/p5.jpg";
+import p6 from "./assets/people/p6.jpg";
+import p7 from "./assets/people/p7.jpg";
+import p8 from "./assets/people/p8.jpg";
+import p9 from "./assets/people/p9.jpg";
+import p10 from "./assets/people/p10.jpg";
+import p11 from "./assets/people/p11.jpg";
+import p12 from "./assets/people/p12.jpg";
+import p13 from "./assets/people/p13.jpg";
+import p14 from "./assets/people/p14.jpg";
+import p15 from "./assets/people/p15.jpg";
+import p16 from "./assets/people/p16.jpg";
 
 export default function People() {
   return (
-    <Box sx={{ maxWidth: 1000, margin: "auto" }}>
-      <Typography margin="auto" variant="h5">
+    <Box sx={{ maxWidth: 1080, margin: "auto" }}>
+      <Typography align="center" variant="h4">
         people
       </Typography>
-      <ImageList variant="masonry" maxCols={5}>
+
+      <Divider>
+        <Typography align="center" variant="h6">
+          peo &#8226; ple
+        </Typography>
+      </Divider>
+      <Typography align="center" variant="h6" width="500">
+        a body of persons that are united by a common culture, tradition, or
+        sense of kinship
+      </Typography>
+      <ImageList variant="masonry" cols={1}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -29,51 +56,64 @@ export default function People() {
 
 const itemData = [
   {
-    img: ColtonNatalie,
+    img: p16,
+    title: "Malaina",
+  },
+  {
+    img: p15,
+    title: "Malaina",
+  },
+  {
+    img: p12,
     title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    title: "Books",
+    img: p13,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    title: "Sink",
+    img: p6,
+    title: "Green Family",
   },
   {
-    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-    title: "Kitchen",
+    img: p7,
+    title: "Jack Jack",
   },
   {
-    img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-    title: "Blinds",
+    img: p8,
+    title: "Alyce",
   },
   {
-    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-    title: "Chairs",
+    img: p1,
+    title: "Rob",
   },
   {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
+    img: p2,
+    title: "Ashley",
   },
   {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
+    img: p3,
+    title: "Connor",
   },
   {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
+    img: p4,
+    title: "Rob",
   },
   {
-    img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-    title: "Storage",
+    img: p9,
+    title: "Troy",
   },
   {
-    img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-    title: "Candle",
+    img: p10,
+    title: "Jane & Ava",
   },
   {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-    title: "Coffee table",
+    img: p11,
+    title: "Bill & Tina",
+  },
+
+  {
+    img: p14,
+    title: "Connor & Ashley",
   },
 ];

@@ -88,6 +88,9 @@ export default function CustomizedAccordions() {
             <ListItemLink href="/#/people">
               <ListItemText primary="People" />
             </ListItemLink>
+            <ListItemLink href="/#/commercial">
+              <ListItemText primary="Commercial" />
+            </ListItemLink>
           </AccordionDetails>
         </Accordion>
         <ListItemLink href="/#/contact">

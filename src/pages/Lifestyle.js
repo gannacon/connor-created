@@ -2,11 +2,37 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import Typography from "@mui/material/Typography";
+import l1 from "./assets/lifestyle/l1.jpg";
+import l2 from "./assets/lifestyle/l2.jpg";
+import l3 from "./assets/lifestyle/l3.jpg";
+import l4 from "./assets/lifestyle/l4.jpg";
+import l5 from "./assets/lifestyle/l5.jpg";
+import l6 from "./assets/lifestyle/l6.jpg";
+import l7 from "./assets/lifestyle/l7.jpg";
+import l8 from "./assets/lifestyle/l8.jpg";
+import l9 from "./assets/lifestyle/l9.jpg";
+import l10 from "./assets/lifestyle/l10.jpg";
+import l11 from "./assets/lifestyle/l11.jpg";
+import l12 from "./assets/lifestyle/l12.jpg";
+import l13 from "./assets/lifestyle/l13.jpg";
+import l14 from "./assets/lifestyle/l14.jpg";
+import l15 from "./assets/lifestyle/l15.jpg";
+import l16 from "./assets/lifestyle/l16.jpg";
+import l17 from "./assets/lifestyle/l17.jpg";
+import l18 from "./assets/lifestyle/l18.jpg";
+import l19 from "./assets/lifestyle/l19.jpg";
+import l20 from "./assets/lifestyle/l20.jpg";
+import l21 from "./assets/lifestyle/l21.jpg";
+import l22 from "./assets/lifestyle/l22.jpg";
 
 export default function Lifestyle() {
   return (
-    <Box sx={{ maxWidth: 1000, margin: "auto" }}>
-      <ImageList variant="masonry" maxCols={5}>
+    <Box sx={{ maxWidth: 1080, margin: "auto" }}>
+      <Typography margin="auto" variant="h5">
+        lifestyle
+      </Typography>
+      <ImageList variant="masonry" cols={2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -24,51 +50,91 @@ export default function Lifestyle() {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-    title: "Bed",
+    img: l1,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    title: "Books",
+    img: l2,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    title: "Sink",
+    img: l3,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
-    title: "Kitchen",
+    img: l4,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
-    title: "Blinds",
+    img: l5,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
-    title: "Chairs",
+    img: l6,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
+    img: l7,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
+    img: l8,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
+    img: l9,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-    title: "Storage",
+    img: l10,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-    title: "Candle",
+    img: l11,
+    title: "Colton & Natalie",
   },
   {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-    title: "Coffee table",
+    img: l12,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l13,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l14,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l15,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l16,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l17,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l18,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l19,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l20,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l21,
+    title: "Colton & Natalie",
+  },
+  {
+    img: l22,
+    title: "Colton & Natalie",
   },
 ];
