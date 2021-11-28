@@ -17,9 +17,9 @@ function ListItemLink(props) {
 }
 
 const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
+  <MuiAccordion disableGutters elevation={100} square {...props} />
 ))(({ theme }) => ({
-  border: `1px solid ${theme.palette.divider}`,
+  // border: `1px solid ${theme.palette.divider}`,
   "&:not(:last-child)": {
     borderBottom: 0,
   },
@@ -44,7 +44,7 @@ const AccordionSummary = styled((props) => (
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
+  padding: theme.spacing(1),
 }));
 
 export default function CustomizedAccordions() {
@@ -85,16 +85,15 @@ export default function CustomizedAccordions() {
             <ListItemLink href="/#/lifestyle">
               <ListItemText primary="Lifestyle" />
             </ListItemLink>
-            <ListItemLink href="/#/photography">
-              <ListItemText primary="Photography" />
+            <ListItemLink href="/#/people">
+              <ListItemText primary="People" />
             </ListItemLink>
           </AccordionDetails>
         </Accordion>
+        <ListItemLink href="/#/contact">
+          <ListItemText primary="Contact Me" />
+        </ListItemLink>
       </List>
-
-      <ListItemLink href="/#/contact">
-        <ListItemText primary="Contact Me" />
-      </ListItemLink>
     </div>
   );
 }

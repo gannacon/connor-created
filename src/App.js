@@ -4,6 +4,8 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Lifestyle from "./pages/Lifestyle";
+import People from "./pages/People";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
@@ -26,7 +28,7 @@ function DarkButton() {
         alignItems: "center",
         justifyContent: "center",
         bgcolor: "background.default",
-        color: "text.primary",
+        color: "text.secondary",
       }}
     >
       {theme.palette.mode} mode
@@ -77,17 +79,31 @@ export default function ToggleColorMode() {
               }
             : {
                 // palette values for dark mode
-                primary: blueGrey,
-                divider: blueGrey[700],
+                primary: grey,
+                divider: grey[700],
                 background: {
-                  default: blueGrey[900],
-                  paper: blueGrey[900],
+                  default: grey[900],
+                  paper: grey[900],
                 },
                 text: {
                   primary: "#fff",
-                  secondary: blueGrey[500],
+                  secondary: grey[500],
                 },
               }),
+        },
+        typography: {
+          fontFamily: [
+            "-apple-system",
+            "BlinkMacSystemFont",
+            '"Segoe UI"',
+            '"Helvetica Neue"',
+            "Roboto",
+            "Arial",
+            "sans-serif",
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+          ].join(","),
         },
       }),
     [mode]
@@ -99,6 +115,8 @@ export default function ToggleColorMode() {
         <Nav />
         <Routes>
           <Route exact path="lifestyle" element={<Lifestyle />} />
+          <Route exact path="people" element={<People />} />
+          <Route exact path="contact" element={<Contact />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
         </Routes>

@@ -23,11 +23,8 @@ function Copyright() {
 
 function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: "background.paper", py: 2 }}>
+    <Box component="footer" sx={{ bgcolor: "background.paper" }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
-          Connor Gannaway
-        </Typography>
         <Typography
           variant="subtitle1"
           align="center"

@@ -5,13 +5,13 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function Lifestyle() {
   return (
-    <Box sx={{ width: 1000, overflowY: "scroll", margin: "auto" }}>
-      <ImageList variant="masonry" cols={5} gap={8}>
+    <Box sx={{ maxWidth: 1000, margin: "auto" }}>
+      <ImageList variant="masonry" maxCols={5}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
               src={`${item.img}`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              srcSet={`${item.img}`}
               alt={item.title}
               loading="lazy"
             />
