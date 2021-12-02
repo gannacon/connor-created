@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Lifestyle from "./pages/Lifestyle";
 import People from "./pages/People";
 import Commercial from "./pages/Commercial";
+import Photography from "./pages/Photography";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
@@ -72,7 +73,7 @@ export default function ToggleColorMode() {
                   main: "#fff",
                   contrastText: "#000",
                 },
-                divider: grey[200],
+                divider: grey[300],
                 text: {
                   primary: grey[900],
                   secondary: grey[800],
@@ -120,6 +121,7 @@ export default function ToggleColorMode() {
           <Route exact path="people" element={<People />} />
           <Route exact path="commercial" element={<Commercial />} />
           <Route exact path="contact" element={<Contact />} />
+          <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
         </Routes>

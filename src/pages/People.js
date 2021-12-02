@@ -21,24 +21,17 @@ import p13 from "./assets/people/p13.jpg";
 import p14 from "./assets/people/p14.jpg";
 import p15 from "./assets/people/p15.jpg";
 import p16 from "./assets/people/p16.jpg";
+import p17 from "./assets/people/p17.jpg";
 
 export default function People() {
   return (
     <Box sx={{ maxWidth: 1080, margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
-        <Typography align="center" variant="h4">
-          people
-        </Typography>
-
         <Divider>
-          <Typography align="center" variant="h6">
-            peo &#8226; ple
+          <Typography align="center" variant="h4">
+            PEOPLE
           </Typography>
         </Divider>
-        <Typography align="center" variant="h6" width="500" ml="10px" mr="10px">
-          a body of persons that are united by a common culture, tradition, or
-          sense of kinship
-        </Typography>
       </Box>
 
       <ImageList variant="masonry" cols={1}>
@@ -87,6 +80,10 @@ const itemData = [
     title: "Alyce",
   },
   {
+    img: p17,
+    title: "Ashley",
+  },
+  {
     img: p1,
     title: "Rob",
   },
@@ -114,7 +111,6 @@ const itemData = [
     img: p11,
     title: "Bill & Tina",
   },
-
   {
     img: p14,
     title: "Connor & Ashley",

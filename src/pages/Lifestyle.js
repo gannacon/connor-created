@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 import l1 from "./assets/lifestyle/l1.jpg";
 import l2 from "./assets/lifestyle/l2.jpg";
 import l3 from "./assets/lifestyle/l3.jpg";
@@ -29,9 +30,13 @@ import l22 from "./assets/lifestyle/l22.jpg";
 export default function Lifestyle() {
   return (
     <Box sx={{ maxWidth: 1080, margin: "auto" }}>
-      <Typography margin="auto" variant="h5">
-        lifestyle
-      </Typography>
+      <Box sx={{ maxWidth: 800, margin: "auto" }}>
+        <Divider>
+          <Typography align="center" variant="h4">
+            LIFESTYLE
+          </Typography>
+        </Divider>
+      </Box>
       <ImageList variant="masonry" cols={2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
