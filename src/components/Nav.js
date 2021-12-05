@@ -10,8 +10,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import CGLogo from "../pages/assets/images/cgiconlogo.png";
 import LogoIcon from "../pages/assets/images/logo.svg";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PropTypes from "prop-types";
@@ -65,10 +63,6 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: "flex-start",
 }));
-
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -162,20 +156,23 @@ export default function PersistentDrawerLeft(props) {
         anchor="left"
         open={open}
       >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-          <Typography variant="h6" anchor="right">
-            How can I help?
-          </Typography>
-        </DrawerHeader>
+        <ClickAwayListener onClickAway={handleDrawerClose}>
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+            <Typography variant="h6" anchor="right">
+              How can I help?
+            </Typography>
+          </DrawerHeader>
+        </ClickAwayListener>
         <DrawerContent />
       </Drawer>
+
       <Main open={open}>
         <DrawerHeader />
       </Main>

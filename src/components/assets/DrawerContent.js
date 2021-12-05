@@ -60,8 +60,14 @@ export default function CustomizedAccordions() {
         <ListItemLink href="/#/">
           <ListItemText primary="Home" />
         </ListItemLink>
+        <ListItemLink href="/#/webdevelopment">
+          <ListItemText primary="Web Development" />
+        </ListItemLink>
+        <ListItemLink href="/#/photography">
+          <ListItemText primary="Photography" />
+        </ListItemLink>
 
-        <Accordion
+        {/* <Accordion
           expanded={expanded === "panel2"}
           onChange={handleChange("panel2")}
         >
@@ -92,7 +98,7 @@ export default function CustomizedAccordions() {
               <ListItemText primary="Commercial" />
             </ListItemLink>
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
         <ListItemLink href="/#/contact">
           <ListItemText primary="Contact Me" />
         </ListItemLink>

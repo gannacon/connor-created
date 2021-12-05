@@ -8,8 +8,6 @@ import Box from "@mui/material/Box";
 import Banner from "../assets/images/banner.jpg";
 
 function MainFeaturedPost(props) {
-  const { post } = props;
-
   return (
     <Box
       sx={{
@@ -22,6 +20,7 @@ function MainFeaturedPost(props) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundImage: `url(${Banner})`,
+        height: "500px",
       }}
     >
       {/* Increase the priority of the hero background image */}
@@ -53,12 +52,12 @@ function MainFeaturedPost(props) {
             >
               Welcome to my creative space
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            {/* <Typography variant="h5" color="inherit" paragraph>
               Here is where I will showcase my web development and photography
               projects. This was website was coded by me using React.
-            </Typography>
+            </Typography> */}
             <Typography variant="subtitle1">
-              Checkout this page's{" "}
+              Checkout this site's{" "}
               <Link
                 variant="subtitle1"
                 href="https://github.com/gannacon/connor-created"

@@ -95,12 +95,12 @@ export default function ToggleColorMode() {
         },
         typography: {
           fontFamily: [
-            "Cormorant Garamond",
+            "Montserrat",
+            "Roboto",
+            '"Helvetica Neue"',
+            '"Segoe UI"',
             "-apple-system",
             "BlinkMacSystemFont",
-            '"Segoe UI"',
-            '"Helvetica Neue"',
-            "Roboto",
             "Arial",
             "sans-serif",
             '"Apple Color Emoji"',
