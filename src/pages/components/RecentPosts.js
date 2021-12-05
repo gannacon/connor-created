@@ -6,72 +6,110 @@ import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
+import CHSLogo from "../assets/images/CHSLOGO.jpg";
+import pbm from "../assets/images/pbm.jpg";
+import pbmlogo from "../assets/images/pbmlogo.png";
+import KPAHistoric from "../assets/images/historicdepot.jpg";
+
+import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 
 function FeaturedPost() {
+  const theme = useTheme();
+
   return (
     <Box
       sx={{
+        width: "100%",
+        margin: "auto",
         position: "relative",
-        p: { xs: 3, md: 6 },
+        p: { xs: 3, md: 9 },
       }}
     >
       <Typography component="h1" variant="h4" color="inherit" gutterBottom>
-        Here are some of my most recent projects:
+        Here are some of my most recent development projects:
       </Typography>
 
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
-          <CardActionArea component="a" href="#">
-            <Card sx={{ display: "flex" }}>
-              <CardContent sx={{ flex: 1 }}>
-                <Typography component="h2" variant="h5">
-                  This is a title
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
-                  Post Date
-                </Typography>
-                <Typography variant="subtitle1" paragraph>
-                  Post Description
-                </Typography>
-                <Typography variant="subtitle1" color="primary">
-                  Continue reading...
-                </Typography>
-              </CardContent>
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={4}>
+          <Card sx={{ maxWidth: 345, margin: "auto" }}>
+            <CardActionArea
+              target="_blank"
+              href="https://www.curtishomesolutions.com/"
+            >
               <CardMedia
                 component="img"
-                sx={{ width: 160, display: { sm: "block" } }}
-                image={"https://picsum.photos/200/300"}
-                alt="Filler text"
+                width="140"
+                image={CHSLogo}
+                alt="CHS Logo"
               />
-            </Card>
-          </CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Curtis Home Solutions
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  New business startup. Website, CRM, Email, Invoicing, Logo
+                  Design.
+                </Typography>
+                <Typography variant="subtitle1" color="Inherit">
+                  Tap to see the final product
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <CardActionArea component="a" href="#">
-            <Card sx={{ display: "flex" }}>
-              <CardContent sx={{ flex: 1 }}>
-                <Typography component="h2" variant="h5">
-                  This is a title
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
-                  Post Date
-                </Typography>
-                <Typography variant="subtitle1" paragraph>
-                  Post Description
-                </Typography>
-                <Typography variant="subtitle1" color="primary">
-                  Continue reading...
-                </Typography>
-              </CardContent>
+        <Grid item xs={12} md={4}>
+          <Card sx={{ maxWidth: 345, margin: "auto" }}>
+            <CardActionArea
+              target="_blank"
+              href="https://www.photosbymalaina.com/"
+            >
               <CardMedia
                 component="img"
-                sx={{ width: 160, display: { sm: "block" } }}
-                image={"https://picsum.photos/200/300"}
-                alt="Filler text"
+                width="140"
+                image={pbmlogo}
+                alt="Malaina Logo"
               />
-            </Card>
-          </CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Photos by Malaina
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Photography Portfolio. Website, Email, Logo Design.
+                </Typography>
+                <Typography variant="subtitle1" color="Inherit">
+                  Tap to see the final product
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Card sx={{ maxWidth: 345, margin: "auto" }}>
+            <CardActionArea
+              target="_blank"
+              href="https://kansaspreservationalliance.org/"
+            >
+              <CardMedia
+                component="img"
+                width="140"
+                image={KPAHistoric}
+                alt="KPA Historic Depot"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Kansas Preservation Alliance{" "}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Website redesign. Email.
+                </Typography>
+                <Typography variant="subtitle1" color="Inherit">
+                  Tap to see the final product
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
         </Grid>
       </Grid>
     </Box>

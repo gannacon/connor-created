@@ -9,6 +9,7 @@ import Commercial from "./pages/Commercial";
 import Photography from "./pages/Photography";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import ComingSoon from "./pages/ComingSoon";
 import { Routes, Route } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";

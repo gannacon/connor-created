@@ -61,108 +61,110 @@ export default function Commercial() {
 const itemData = [
   {
     img: p27,
-    title: "Connor & Ashley",
+    title: "Experience Center Living Room",
   },
   {
     img: p20,
-    title: "Connor & Ashley",
+    title: "Experience Center Main Stair",
   },
   {
     img: p21,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p22,
-    title: "Connor & Ashley",
+    title: "Experience Center Louis Bedroom",
   },
   {
     img: p23,
-    title: "Connor & Ashley",
+    title: "Experience Center Louis Bedroom",
   },
   {
+    img: p22,
+    title: "Experience Center Rooftop Bar",
+  },
+
+  {
     img: p24,
-    title: "Connor & Ashley",
+    title: "Experience Center Living Room",
   },
   {
     img: p25,
-    title: "Connor & Ashley",
+    title: "Experience Center Patio",
   },
   {
     img: p26,
-    title: "Connor & Ashley",
+    title: "Experience Center Living Room",
   },
 
   {
     img: p1,
-    title: "Rob",
+    title: "Farm House",
   },
 
   {
     img: p3,
-    title: "Connor",
+    title: "Barn",
   },
   {
     img: p4,
-    title: "Rob",
+    title: "Barn",
   },
   {
     img: p5,
-    title: "Green Family",
-  },
-  {
-    img: p6,
-    title: "Green Family",
-  },
-  {
-    img: p7,
-    title: "Jack Jack",
+    title: "Farm House",
   },
   {
     img: p8,
-    title: "Alyce",
+    title: "Unruh House",
   },
   {
+    img: p6,
+    title: "Unruh Backyard",
+  },
+  {
+    img: p7,
+    title: "Unruh Backyard",
+  },
+
+  {
     img: p9,
-    title: "Troy",
+    title: "Unruh Front",
   },
   {
     img: p10,
-    title: "Jane & Ava",
+    title: "Unruh interior",
   },
   {
     img: p11,
-    title: "Bill & Tina",
+    title: "Unruh interior",
   },
   {
     img: p12,
-    title: "Colton & Natalie",
+    title: "Unruh Interior",
   },
   {
     img: p13,
-    title: "Colton & Natalie",
+    title: "Unruh Interior",
   },
   {
     img: p14,
-    title: "Connor & Ashley",
+    title: "Unruh Interior",
   },
   {
     img: p15,
-    title: "Malaina",
+    title: "McNiel House",
   },
   {
     img: p16,
-    title: "Malaina",
+    title: "McNiel Interior",
   },
   {
     img: p17,
-    title: "Connor & Ashley",
+    title: "McNiel Interior",
   },
   {
     img: p18,
-    title: "Connor & Ashley",
+    title: "McNiel Interior",
   },
   {
     img: p19,
-    title: "Connor & Ashley",
+    title: "McNiel Interior",
   },
 ];

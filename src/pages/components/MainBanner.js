@@ -12,7 +12,7 @@ import p3 from "../assets/people/p3.jpg";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-function MainFeaturedPost(props) {
+function MainBanner(props) {
   const theme = useTheme();
 
   return (
@@ -74,7 +74,7 @@ function MainFeaturedPost(props) {
               </Grid>
             </Grid>
           </Box>
-          <Typography variant="subtitle">
+          <Typography variant="subtitle" marginBottom="10px">
             Checkout this site's{" "}
             <Link
               variant="subtitle"
@@ -91,4 +91,4 @@ function MainFeaturedPost(props) {
   );
 }
 
-export default MainFeaturedPost;
+export default MainBanner;
