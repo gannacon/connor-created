@@ -34,7 +34,7 @@ import p27 from "./assets/commercial/p27.jpg";
 
 export default function Commercial() {
   return (
-    <Box sx={{ maxWidth: 1080, margin: "auto" }}>
+    <Box sx={{ maxWidth: "90%", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
@@ -60,13 +60,43 @@ export default function Commercial() {
 
 const itemData = [
   {
+    img: p27,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p20,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p21,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p22,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p23,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p24,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p25,
+    title: "Connor & Ashley",
+  },
+  {
+    img: p26,
+    title: "Connor & Ashley",
+  },
+
+  {
     img: p1,
     title: "Rob",
   },
-  {
-    img: p2,
-    title: "Ashley",
-  },
+
   {
     img: p3,
     title: "Connor",
@@ -133,38 +163,6 @@ const itemData = [
   },
   {
     img: p19,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p20,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p21,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p22,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p23,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p24,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p25,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p26,
-    title: "Connor & Ashley",
-  },
-  {
-    img: p27,
     title: "Connor & Ashley",
   },
 ];

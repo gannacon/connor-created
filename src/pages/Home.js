@@ -12,21 +12,7 @@ export default function Home() {
   return (
     <>
       <FeaturedPost />
-
-      <Box
-        sx={{
-          position: "relative",
-          p: { xs: 3, md: 6 },
-        }}
-      >
-        <Typography component="h1" variant="h4" color="inherit" gutterBottom>
-          Here are some of my most recent projects:
-        </Typography>
-
-        <Grid container spacing={4}>
-          <RecentPosts />
-        </Grid>
-      </Box>
+      <RecentPosts />
     </>
   );
 }

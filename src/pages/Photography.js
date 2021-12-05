@@ -96,7 +96,7 @@ export default function Photography() {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        width: "80%",
+        maxWidth: "90%",
         margin: "auto",
       }}
     >

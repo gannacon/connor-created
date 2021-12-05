@@ -25,7 +25,7 @@ import p17 from "./assets/people/p17.jpg";
 
 export default function People() {
   return (
-    <Box sx={{ maxWidth: 1080, margin: "auto" }}>
+    <Box sx={{ maxWidth: "90%", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">

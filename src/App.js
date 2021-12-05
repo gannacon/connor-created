@@ -15,7 +15,10 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { blueGrey, grey } from "@mui/material/colors";
+
+import { grey } from "@mui/material/colors";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -49,7 +52,7 @@ function DarkButton() {
   );
 }
 
-export default function ToggleColorMode() {
+export default function App(ScrollToTop) {
   const [mode, setMode] = React.useState("light");
   const colorMode = React.useMemo(
     () => ({

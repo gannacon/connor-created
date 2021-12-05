@@ -29,7 +29,7 @@ import l22 from "./assets/lifestyle/l22.jpg";
 
 export default function Lifestyle() {
   return (
-    <Box sx={{ maxWidth: 1080, margin: "auto" }}>
+    <Box sx={{ width: "90%", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
