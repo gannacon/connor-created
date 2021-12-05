@@ -26,10 +26,19 @@ export default function Home() {
             My passion is helping businesses establish an online presence
             through web development and photography.
           </Typography>
+          <br />
+          <br />
+          <br />
+          <Typography variant="subtitle">
+            This is strictly my portfolio and creative playground. If you are
+            interested in working together visit my organization's page for
+            inquiries:
+          </Typography>
         </Box>
 
         <Button
-          href="mailto:connor@gannaway.org"
+          href="https://www.gannaway.org/"
+          target="blank"
           sx={{ m: "10px" }}
           variant="contained"
           size="large"

@@ -60,9 +60,9 @@ export default function CustomizedAccordions() {
         <ListItemLink href="/#/">
           <ListItemText primary="Home" />
         </ListItemLink>
-        <ListItemLink href="/#/webdevelopment">
+        {/* <ListItemLink href="/#/webdevelopment">
           <ListItemText primary="Web Development" />
-        </ListItemLink>
+        </ListItemLink> */}
         <ListItemLink href="/#/photography">
           <ListItemText primary="Photography" />
         </ListItemLink>
@@ -99,9 +99,9 @@ export default function CustomizedAccordions() {
             </ListItemLink>
           </AccordionDetails>
         </Accordion> */}
-        <ListItemLink href="/#/contact">
+        {/* <ListItemLink href="/#/contact">
           <ListItemText primary="Contact Me" />
-        </ListItemLink>
+        </ListItemLink> */}
       </List>
     </div>
   );

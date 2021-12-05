@@ -21,21 +21,21 @@ export default function Contact() {
         sx={{
           position: "relative",
           p: { xs: 3, md: 6 },
-          maxWidth: "1000px",
+          width: "90%",
           margin: "auto",
         }}
       >
-        <Typography component="h1" variant="h4" color="inherit" gutterBottom>
+        <Typography variant="h3" color="inherit" gutterBottom>
           Let's talk.{" "}
         </Typography>
 
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4} md={4}>
-            <Item>xs=4</Item>
+            <Typography variant="h5" color="inherit" gutterBottom>
+              Email: connor@gannaway.org Phone: 785-806-7967
+            </Typography>
           </Grid>
-          <Grid item xs={12} sm={8} md={8}>
-            <Item>xs=8</Item>
-          </Grid>
+          <Grid item xs={12} sm={8} md={8}></Grid>
         </Grid>
       </Box>
     </>

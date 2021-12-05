@@ -124,7 +124,7 @@ export default function App(ScrollToTop) {
           <Route exact path="lifestyle" element={<Lifestyle />} />
           <Route exact path="people" element={<People />} />
           <Route exact path="commercial" element={<Commercial />} />
-          <Route exact path="contact" element={<Contact />} />
+          {/* <Route exact path="contact" element={<Contact />} /> */}
           <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
           <Route exact path="/" element={<Home />} />
