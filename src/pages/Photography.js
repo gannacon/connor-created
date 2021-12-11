@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import l19 from "./assets/lifestyle/l19.jpg";
+import l19 from "./assets/gallery/l19.jpg";
 import p8 from "./assets/commercial/p8.jpg";
 import p16 from "./assets/people/p16.jpg";
 
@@ -103,7 +103,7 @@ export default function Photography() {
       <ImageButton
         focusRipple
         style={{ height: "450px", width: "100%" }}
-        href="/#/commercial"
+        href="/commercial"
       >
         <ImageSrc style={{ backgroundImage: `url(${p8})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
@@ -127,7 +127,7 @@ export default function Photography() {
       <ImageButton
         focusRipple
         style={{ height: "450px", width: "100%" }}
-        href="/#/lifestyle"
+        href="/gallery"
       >
         <ImageSrc style={{ backgroundImage: `url(${l19})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
@@ -143,7 +143,7 @@ export default function Photography() {
               pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
             }}
           >
-            Lifestyle
+            Gallery
             <ImageMarked className="MuiImageMarked-root" />
           </Typography>
         </Image>
@@ -152,7 +152,7 @@ export default function Photography() {
       <ImageButton
         focusRipple
         style={{ height: "450px", width: "100%" }}
-        href="/#/people"
+        href="/people"
       >
         <ImageSrc style={{ backgroundImage: `url(${p16})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />

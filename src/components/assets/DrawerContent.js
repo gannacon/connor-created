@@ -57,13 +57,13 @@ export default function CustomizedAccordions() {
   return (
     <div>
       <List>
-        <ListItemLink href="/#/">
+        <ListItemLink href="/">
           <ListItemText primary="Home" />
         </ListItemLink>
         {/* <ListItemLink href="/#/webdevelopment">
           <ListItemText primary="Web Development" />
         </ListItemLink> */}
-        <ListItemLink href="/#/photography">
+        <ListItemLink href="/photography">
           <ListItemText primary="Photography" />
         </ListItemLink>
 

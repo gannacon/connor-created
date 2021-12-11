@@ -3,7 +3,7 @@ import * as React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Lifestyle from "./pages/Lifestyle";
+import Gallery from "./pages/Gallery";
 import People from "./pages/People";
 import Commercial from "./pages/Commercial";
 import Photography from "./pages/Photography";
@@ -121,7 +121,7 @@ export default function App(ScrollToTop) {
       <ThemeProvider theme={theme}>
         <Nav />
         <Routes>
-          <Route exact path="lifestyle" element={<Lifestyle />} />
+          <Route exact path="gallery" element={<Gallery />} />
           <Route exact path="people" element={<People />} />
           <Route exact path="commercial" element={<Commercial />} />
           {/* <Route exact path="contact" element={<Contact />} /> */}
