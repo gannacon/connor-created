@@ -31,6 +31,9 @@ import p24 from "./assets/commercial/p24.jpg";
 import p25 from "./assets/commercial/p25.jpg";
 import p26 from "./assets/commercial/p26.jpg";
 import p27 from "./assets/commercial/p27.jpg";
+import p28 from "./assets/commercial/p28.jpg";
+import p29 from "./assets/commercial/p29.jpg";
+import p30 from "./assets/commercial/p30.jpg";
 
 export default function Commercial() {
   return (
@@ -60,111 +63,126 @@ export default function Commercial() {
 
 const itemData = [
   {
-    img: p27,
-    title: "Experience Center Living Room",
-  },
-  {
-    img: p20,
-    title: "Experience Center Main Stair",
-  },
-  {
-    img: p21,
-    title: "Experience Center Louis Bedroom",
-  },
-  {
-    img: p23,
-    title: "Experience Center Louis Bedroom",
-  },
-  {
-    img: p22,
-    title: "Experience Center Rooftop Bar",
-  },
-
-  {
-    img: p24,
-    title: "Experience Center Living Room",
-  },
-  {
-    img: p25,
-    title: "Experience Center Patio",
-  },
-  {
-    img: p26,
-    title: "Experience Center Living Room",
-  },
-
-  {
     img: p1,
-    title: "Farm House",
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p2,
+    title: "CG COMMERCIAL",
   },
 
   {
     img: p3,
-    title: "Barn",
+    title: "CG COMMERCIAL",
   },
   {
     img: p4,
-    title: "Barn",
+    title: "CG COMMERCIAL",
   },
   {
     img: p5,
-    title: "Farm House",
-  },
-  {
-    img: p8,
-    title: "Unruh House",
+    title: "CG COMMERCIAL",
   },
   {
     img: p6,
-    title: "Unruh Backyard",
+    title: "CG COMMERCIAL",
   },
   {
     img: p7,
-    title: "Unruh Backyard",
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p8,
+    title: "CG COMMERCIAL",
   },
 
   {
     img: p9,
-    title: "Unruh Front",
+    title: "CG COMMERCIAL",
   },
   {
     img: p10,
-    title: "Unruh interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p11,
-    title: "Unruh interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p12,
-    title: "Unruh Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p13,
-    title: "Unruh Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p14,
-    title: "Unruh Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p15,
-    title: "McNiel House",
+    title: "CG COMMERCIAL",
   },
   {
     img: p16,
-    title: "McNiel Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p17,
-    title: "McNiel Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p18,
-    title: "McNiel Interior",
+    title: "CG COMMERCIAL",
   },
   {
     img: p19,
-    title: "McNiel Interior",
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p20,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p21,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p23,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p22,
+    title: "CG COMMERCIAL",
+  },
+
+  {
+    img: p24,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p25,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p26,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p27,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p28,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p29,
+    title: "CG COMMERCIAL",
+  },
+  {
+    img: p30,
+    title: "CG COMMERCIAL",
   },
 ];

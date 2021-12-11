@@ -4,28 +4,30 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import l1 from "./assets/lifestyle/l1.jpg";
-import l2 from "./assets/lifestyle/l2.jpg";
-import l3 from "./assets/lifestyle/l3.jpg";
-import l4 from "./assets/lifestyle/l4.jpg";
-import l5 from "./assets/lifestyle/l5.jpg";
-import l6 from "./assets/lifestyle/l6.jpg";
-import l7 from "./assets/lifestyle/l7.jpg";
-import l8 from "./assets/lifestyle/l8.jpg";
-import l9 from "./assets/lifestyle/l9.jpg";
-import l10 from "./assets/lifestyle/l10.jpg";
-import l11 from "./assets/lifestyle/l11.jpg";
-import l12 from "./assets/lifestyle/l12.jpg";
-import l13 from "./assets/lifestyle/l13.jpg";
-import l14 from "./assets/lifestyle/l14.jpg";
-import l15 from "./assets/lifestyle/l15.jpg";
-import l16 from "./assets/lifestyle/l16.jpg";
-import l17 from "./assets/lifestyle/l17.jpg";
-import l18 from "./assets/lifestyle/l18.jpg";
-import l19 from "./assets/lifestyle/l19.jpg";
-import l20 from "./assets/lifestyle/l20.jpg";
-import l21 from "./assets/lifestyle/l21.jpg";
-import l22 from "./assets/lifestyle/l22.jpg";
+import l1 from "./assets/gallery/l1.jpg";
+import l2 from "./assets/gallery/l2.jpg";
+import l3 from "./assets/gallery/l3.jpg";
+import l4 from "./assets/gallery/l4.jpg";
+import l5 from "./assets/gallery/l5.jpg";
+import l6 from "./assets/gallery/l6.jpg";
+import l7 from "./assets/gallery/l7.jpg";
+import l8 from "./assets/gallery/l8.jpg";
+import l9 from "./assets/gallery/l9.jpg";
+import l10 from "./assets/gallery/l10.jpg";
+import l11 from "./assets/gallery/l11.jpg";
+import l12 from "./assets/gallery/l12.jpg";
+import l13 from "./assets/gallery/l13.jpg";
+import l14 from "./assets/gallery/l14.jpg";
+import l15 from "./assets/gallery/l15.jpg";
+import l16 from "./assets/gallery/l16.jpg";
+import l17 from "./assets/gallery/l17.jpg";
+import l18 from "./assets/gallery/l18.jpg";
+import l19 from "./assets/gallery/l19.jpg";
+import l20 from "./assets/gallery/l20.jpg";
+import l21 from "./assets/gallery/l21.jpg";
+import l22 from "./assets/gallery/l22.jpg";
+import l23 from "./assets/gallery/l23.jpg";
+import l24 from "./assets/gallery/l24.jpg";
 
 export default function Lifestyle() {
   return (
@@ -56,90 +58,98 @@ export default function Lifestyle() {
 const itemData = [
   {
     img: l1,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l2,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l3,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l4,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l5,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l6,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l7,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l8,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l9,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l10,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l11,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l12,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l13,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l14,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l15,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l16,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l17,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l18,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l19,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l20,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l21,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
   },
   {
     img: l22,
-    title: "Colton & Natalie",
+    title: "CG GALLERY",
+  },
+  {
+    img: l23,
+    title: "CG GALLERY",
+  },
+  {
+    img: l24,
+    title: "CG GALLERY",
   },
 ];
