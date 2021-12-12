@@ -121,13 +121,13 @@ export default function App(ScrollToTop) {
       <ThemeProvider theme={theme}>
         <Nav />
         <Routes>
-          <Route exact path="gallery" component={Gallery} />
-          <Route exact path="people" component={People} />
-          <Route exact path="commercial" component={Commercial} />
+          <Route exact path="gallery" element={<Gallery />} />
+          <Route exact path="people" element={<People />} />
+          <Route exact path="commercial" element={<Commercial />} />
           {/* <Route exact path="contact" element={<Contact />} /> */}
-          <Route exact path="photography" component={Photography} />
+          <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" element={<Home />} />
         </Routes>
         <Footer />
         <DarkButton />

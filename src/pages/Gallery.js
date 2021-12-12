@@ -28,6 +28,7 @@ import l21 from "./assets/gallery/l21.jpg";
 import l22 from "./assets/gallery/l22.jpg";
 import l23 from "./assets/gallery/l23.jpg";
 import l24 from "./assets/gallery/l24.jpg";
+import l25 from "./assets/gallery/l25.jpg";
 
 export default function Lifestyle() {
   return (
@@ -150,6 +151,10 @@ const itemData = [
   },
   {
     img: l24,
+    title: "CG GALLERY",
+  },
+  {
+    img: l25,
     title: "CG GALLERY",
   },
 ];
