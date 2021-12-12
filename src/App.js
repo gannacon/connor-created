@@ -121,9 +121,9 @@ export default function App(ScrollToTop) {
       <ThemeProvider theme={theme}>
         <Nav />
         <Routes>
-          <Route exact path="gallery" element={<Gallery />} />
-          <Route exact path="people" element={<People />} />
-          <Route exact path="commercial" element={<Commercial />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="people" element={<People />} />
+          <Route path="commercial" element={<Commercial />} />
           {/* <Route exact path="contact" element={<Contact />} /> */}
           <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}
