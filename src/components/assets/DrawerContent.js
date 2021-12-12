@@ -1,5 +1,6 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -57,15 +58,18 @@ export default function CustomizedAccordions() {
   return (
     <div>
       <List>
-        <ListItemLink to="/">
-          <ListItemText primary="Home" />
-        </ListItemLink>
+        <ListItem>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <ListItemText primary="HOME" />
+          </Link>
+        </ListItem>
+
         {/* <ListItemLink href="/#/webdevelopment">
           <ListItemText primary="Web Development" />
         </ListItemLink> */}
-        <ListItemLink to="/photography">
+        <Link to="/photography">
           <ListItemText primary="Photography" />
-        </ListItemLink>
+        </Link>
 
         {/* <Accordion
           expanded={expanded === "panel2"}
