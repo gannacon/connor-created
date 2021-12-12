@@ -17,7 +17,7 @@ function MainBanner(props) {
 
   return (
     <ParallaxProvider>
-      <div scrollAxis="vertical">
+      <div scrollaxis="vertical">
         <Parallax y={[20, -30]}>
           <Box
             sx={{
