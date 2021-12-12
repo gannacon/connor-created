@@ -4,24 +4,24 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import l1 from "./assets/automotive/l1.jpg";
-import l2 from "./assets/automotive/l2.jpg";
-import l3 from "./assets/automotive/l3.jpg";
-import l4 from "./assets/automotive/l4.jpg";
-import l5 from "./assets/automotive/l5.jpg";
-import l6 from "./assets/automotive/l6.jpg";
-import l7 from "./assets/automotive/l7.jpg";
-import l8 from "./assets/automotive/l8.jpg";
-import l9 from "./assets/automotive/l9.jpg";
-import l10 from "./assets/automotive/l10.jpg";
-import l11 from "./assets/automotive/l11.jpg";
-import l12 from "./assets/automotive/l12.jpg";
-import l13 from "./assets/automotive/l13.jpg";
-import l14 from "./assets/automotive/l14.jpg";
-import l15 from "./assets/automotive/l15.jpg";
-import l16 from "./assets/automotive/l16.jpg";
-import l17 from "./assets/automotive/l17.jpg";
-import l18 from "./assets/automotive/l18.jpg";
+import p1 from "./assets/automotive/p1.jpg";
+import p2 from "./assets/automotive/p2.jpg";
+import p3 from "./assets/automotive/p3.jpg";
+import p4 from "./assets/automotive/p4.jpg";
+import p5 from "./assets/automotive/p5.jpg";
+import p6 from "./assets/automotive/p6.jpg";
+import p7 from "./assets/automotive/p7.jpg";
+import p8 from "./assets/automotive/p8.jpg";
+import p9 from "./assets/automotive/p9.jpg";
+import p10 from "./assets/automotive/p10.jpg";
+import p11 from "./assets/automotive/p11.jpg";
+import p12 from "./assets/automotive/p12.jpg";
+import p13 from "./assets/automotive/p13.jpg";
+import p14 from "./assets/automotive/p14.jpg";
+import p15 from "./assets/automotive/p15.jpg";
+import p16 from "./assets/automotive/p16.jpg";
+import p17 from "./assets/automotive/p17.jpg";
+import p18 from "./assets/automotive/p18.jpg";
 // import l19 from "./assets/automotive/l19.jpg";
 // import l20 from "./assets/automotive/l20.jpg";
 // import l21 from "./assets/automotive/l21.jpg";
@@ -29,13 +29,13 @@ import l18 from "./assets/automotive/l18.jpg";
 // import l23 from "./assets/automotive/l23.jpg";
 // import l24 from "./assets/automotive/l24.jpg";
 
-export default function Lifestyle() {
+export default function Automotive() {
   return (
     <Box sx={{ width: "90%", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
-            LIFESTYLE
+            AUTOMOTIVE
           </Typography>
         </Divider>
       </Box>
@@ -57,75 +57,77 @@ export default function Lifestyle() {
 
 const itemData = [
   {
-    img: l1,
-    title: "CG AUTOMOTIVE",
+    img: p1,
+    title: "CG AUTO",
   },
   {
-    img: l2,
-    title: "CG AUTOMOTIVE",
+    img: p2,
+    title: "CG AUTO",
+  },
+
+  {
+    img: p3,
+    title: "CG AUTO",
   },
   {
-    img: l3,
-    title: "CG AUTOMOTIVE",
+    img: p4,
+    title: "CG AUTO",
   },
   {
-    img: l4,
-    title: "CG AUTOMOTIVE",
+    img: p5,
+    title: "CG AUTO",
   },
   {
-    img: l5,
-    title: "CG AUTOMOTIVE",
+    img: p6,
+    title: "CG AUTO",
   },
   {
-    img: l6,
-    title: "CG AUTOMOTIVE",
+    img: p7,
+    title: "CG AUTO",
   },
   {
-    img: l7,
-    title: "CG AUTOMOTIVE",
+    img: p8,
+    title: "CG AUTO",
+  },
+
+  {
+    img: p9,
+    title: "CG AUTO",
   },
   {
-    img: l8,
-    title: "CG AUTOMOTIVE",
+    img: p10,
+    title: "CG AUTO",
   },
   {
-    img: l9,
-    title: "CG AUTOMOTIVE",
+    img: p11,
+    title: "CG AUTO",
   },
   {
-    img: l10,
-    title: "CG AUTOMOTIVE",
+    img: p12,
+    title: "CG AUTO",
   },
   {
-    img: l11,
-    title: "CG AUTOMOTIVE",
+    img: p13,
+    title: "CG AUTO",
   },
   {
-    img: l12,
-    title: "CG AUTOMOTIVE",
+    img: p14,
+    title: "CG AUTO",
   },
   {
-    img: l13,
-    title: "CG AUTOMOTIVE",
+    img: p15,
+    title: "CG AUTO",
   },
   {
-    img: l14,
-    title: "CG AUTOMOTIVE",
+    img: p16,
+    title: "CG AUTO",
   },
   {
-    img: l15,
-    title: "CG AUTOMOTIVE",
+    img: p17,
+    title: "CG AUTO",
   },
   {
-    img: l16,
-    title: "CG AUTOMOTIVE",
-  },
-  {
-    img: l17,
-    title: "CG AUTOMOTIVE",
-  },
-  {
-    img: l18,
-    title: "CG AUTOMOTIVE",
+    img: p18,
+    title: "CG AUTO",
   },
 ];

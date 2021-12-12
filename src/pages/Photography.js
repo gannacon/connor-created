@@ -3,10 +3,10 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import l19 from "./assets/gallery/l19.jpg";
-import p8 from "./assets/commercial/p8.jpg";
-import p16 from "./assets/people/p16.jpg";
+import l12 from "./assets/gallery/l12.jpg";
+import p11 from "./assets/commercial/p11.jpg";
+import p10 from "./assets/people/p10.jpg";
+import p6 from "./assets/automotive/p6.jpg";
 
 // const images = [
 //   {
@@ -96,16 +96,16 @@ export default function Photography() {
       sx={{
         display: "flex",
         flexWrap: "wrap",
-        maxWidth: "90%",
+        maxWidth: "2040px",
         margin: "auto",
       }}
     >
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "100%" }}
+        style={{ height: "450px", width: "50%" }}
         href="/commercial"
       >
-        <ImageSrc style={{ backgroundImage: `url(${p8})` }} />
+        <ImageSrc style={{ backgroundImage: `url(${p11})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
           <Typography
@@ -123,13 +123,13 @@ export default function Photography() {
             <ImageMarked className="MuiImageMarked-root" />
           </Typography>
         </Image>
-      </ImageButton>
+      </ImageButton>{" "}
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "100%" }}
-        href="/gallery"
+        style={{ height: "450px", width: "50%" }}
+        href="/automotive"
       >
-        <ImageSrc style={{ backgroundImage: `url(${l19})` }} />
+        <ImageSrc style={{ backgroundImage: `url(${p6})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
           <Typography
@@ -143,18 +143,17 @@ export default function Photography() {
               pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
             }}
           >
-            Gallery
+            Automotive
             <ImageMarked className="MuiImageMarked-root" />
           </Typography>
         </Image>
       </ImageButton>
-
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "100%" }}
+        style={{ height: "450px", width: "50%" }}
         href="/people"
       >
-        <ImageSrc style={{ backgroundImage: `url(${p16})` }} />
+        <ImageSrc style={{ backgroundImage: `url(${p10})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
           <Typography
@@ -169,6 +168,30 @@ export default function Photography() {
             }}
           >
             People
+            <ImageMarked className="MuiImageMarked-root" />
+          </Typography>
+        </Image>
+      </ImageButton>
+      <ImageButton
+        focusRipple
+        style={{ height: "450px", width: "50%" }}
+        href="/gallery"
+      >
+        <ImageSrc style={{ backgroundImage: `url(${l12})` }} />
+        <ImageBackdrop className="MuiImageBackdrop-root" />
+        <Image>
+          <Typography
+            component="span"
+            variant="h5"
+            color="inherit"
+            sx={{
+              position: "relative",
+              p: 4,
+              pt: 2,
+              pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+            }}
+          >
+            Gallery
             <ImageMarked className="MuiImageMarked-root" />
           </Typography>
         </Image>

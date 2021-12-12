@@ -54,8 +54,20 @@ function Footer() {
             href="https://github.com/gannacon"
           >
             <GitHubIcon color="text.secondary" />
-          </Grid>
+          </Grid>{" "}
+          <Typography variant="subtitle1">
+            Checkout this site's{" "}
+            <Link
+              variant="subtitle1"
+              color="inherit"
+              href="https://github.com/gannacon/connor-created"
+              target="_blanks"
+            >
+              repo.
+            </Link>
+          </Typography>
         </Typography>
+
         <Copyright />
       </Container>
     </Box>

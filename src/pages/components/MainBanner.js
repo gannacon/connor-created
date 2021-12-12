@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 
 import Banner from "../assets/images/banner.jpg";
-import p3 from "../assets/people/p3.jpg";
+import Hero from "../assets/images/hero.jpg";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
@@ -30,7 +30,7 @@ function MainBanner(props) {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              backgroundImage: `url(${p3})`,
+              backgroundImage: `url(${Hero})`,
               [theme.breakpoints.up("md")]: {
                 backgroundImage: `url(${Banner})`,
               },
@@ -74,17 +74,6 @@ function MainBanner(props) {
               </Grid>
             </Grid>
           </Box>
-          <Typography variant="subtitle" marginBottom="10px">
-            Checkout this site's{" "}
-            <Link
-              variant="subtitle"
-              color="inherit"
-              href="https://github.com/gannacon/connor-created"
-              target="_blanks"
-            >
-              repo.
-            </Link>
-          </Typography>
         </Parallax>
       </div>
     </ParallaxProvider>

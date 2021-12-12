@@ -20,7 +20,7 @@ export default function Home() {
         </Typography>
         <Box sx={{ m: "10px" }}>
           <Typography variant="subtitle">
-            I’m a web designer, photographer, and engineer from Kansas City,
+            I’m a web developer, photographer, and engineer from Kansas City,
             Kansas.
             <br />
             My passion is helping businesses establish an online presence

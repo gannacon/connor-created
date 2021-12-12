@@ -25,11 +25,10 @@ import p17 from "./assets/people/p17.jpg";
 import p18 from "./assets/people/p18.jpg";
 import p19 from "./assets/people/p19.jpg";
 import p20 from "./assets/people/p20.jpg";
-import p21 from "./assets/people/p21.jpg";
 
 export default function People() {
   return (
-    <Box sx={{ maxWidth: "90%", margin: "auto" }}>
+    <Box sx={{ maxWidth: "60%", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
@@ -38,7 +37,7 @@ export default function People() {
         </Divider>
       </Box>
 
-      <ImageList variant="masonry" cols={1}>
+      <ImageList variant="masonry" cols={2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -56,87 +55,84 @@ export default function People() {
 
 const itemData = [
   {
-    img: p1,
-    title: "Rob",
-  },
-  {
-    img: p2,
-    title: "Ashley",
-  },
-  {
-    img: p3,
-    title: "Connor",
-  },
-  {
-    img: p4,
-    title: "Rob",
-  },
-  {
-    img: p5,
-    title: "Rob",
-  },
-  {
-    img: p6,
-    title: "Green Family",
-  },
-  {
-    img: p7,
-    title: "Jack Jack",
-  },
-  {
-    img: p8,
-    title: "Alyce",
-  },
-  {
-    img: p9,
-    title: "Troy",
-  },
-  {
-    img: p10,
-    title: "Jane & Ava",
-  },
-  {
     img: p11,
-    title: "Bill & Tina",
+    title: "CG PEOPLE",
   },
   {
     img: p12,
-    title: "Colton & Natalie",
+    title: "CG PEOPLE",
   },
   {
+    img: p1,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p2,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p3,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p4,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p5,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p6,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p7,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p8,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p9,
+    title: "CG PEOPLE",
+  },
+  {
+    img: p10,
+    title: "CG PEOPLE",
+  },
+
+  {
     img: p13,
-    title: "Colton & Natalie",
+    title: "CG PEOPLE",
   },
   {
     img: p14,
-    title: "Connor & Ashley",
+    title: "CG PEOPLE",
   },
   {
     img: p15,
-    title: "Malaina",
+    title: "CG PEOPLE",
   },
   {
     img: p16,
-    title: "Malaina",
+    title: "CG PEOPLE",
   },
   {
     img: p17,
-    title: "Ashley",
+    title: "CG PEOPLE",
   },
   {
     img: p18,
-    title: "Ashley",
+    title: "CG PEOPLE",
   },
   {
     img: p19,
-    title: "Ashley",
+    title: "CG PEOPLE",
   },
   {
     img: p20,
-    title: "Ashley",
-  },
-  {
-    img: p21,
-    title: "Ashley",
+    title: "CG PEOPLE",
   },
 ];

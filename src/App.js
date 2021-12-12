@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery";
+import Automotive from "./pages/Automotive";
 import People from "./pages/People";
 import Commercial from "./pages/Commercial";
 import Photography from "./pages/Photography";
@@ -122,6 +123,7 @@ export default function App(ScrollToTop) {
         <Nav />
         <Routes>
           <Route exact path="gallery" element={<Gallery />} />
+          <Route exact path="automotive" element={<Automotive />} />
           <Route exact path="people" element={<People />} />
           <Route exact path="commercial" element={<Commercial />} />
           {/* <Route exact path="contact" element={<Contact />} /> */}

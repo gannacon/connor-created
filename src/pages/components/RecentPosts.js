@@ -49,8 +49,8 @@ function FeaturedPost() {
                   Curtis Home Solutions
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  New business startup. Website, CRM, Email, Invoicing, Logo
-                  Design.
+                  New business startup. Website, CRM, Email, Invoicing, Brand
+                  and Logo Design.
                 </Typography>
                 <Typography variant="subtitle1" color="Inherit">
                   Tap to see the final product
