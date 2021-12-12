@@ -156,20 +156,20 @@ export default function PersistentDrawerLeft(props) {
         anchor="left"
         open={open}
       >
-        <ClickAwayListener onClickAway={handleDrawerClose}>
-          <DrawerHeader>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === "ltr" ? (
-                <ChevronLeftIcon />
-              ) : (
-                <ChevronRightIcon />
-              )}
-            </IconButton>
-            <Typography variant="h6" anchor="right">
-              How can I help?
-            </Typography>
-          </DrawerHeader>
-        </ClickAwayListener>
+        {/* <ClickAwayListener onClickAway={handleDrawerClose}> */}
+        <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === "ltr" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
+          </IconButton>
+          <Typography variant="h6" anchor="right">
+            How can I help?
+          </Typography>
+        </DrawerHeader>
+        {/* </ClickAwayListener> */}
         <DrawerContent />
       </Drawer>
 
