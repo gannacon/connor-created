@@ -16,7 +16,7 @@ import l9 from "./assets/gallery/l9.jpg";
 import l10 from "./assets/gallery/l10.jpg";
 import l11 from "./assets/gallery/l11.jpg";
 import l12 from "./assets/gallery/l12.jpg";
-import l13 from "./assets/gallery/l13.jpg";
+// import l13 from "./assets/gallery/l13.jpg";
 import l14 from "./assets/gallery/l14.jpg";
 import l15 from "./assets/gallery/l15.jpg";
 import l16 from "./assets/gallery/l16.jpg";
@@ -32,7 +32,7 @@ import l25 from "./assets/gallery/l25.jpg";
 
 export default function Lifestyle() {
   return (
-    <Box sx={{ width: "90%", margin: "auto" }}>
+    <Box sx={{ width: "90%", maxWidth: "1080px", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
@@ -105,10 +105,10 @@ const itemData = [
     img: l12,
     title: "CG GALLERY",
   },
-  {
-    img: l13,
-    title: "CG GALLERY",
-  },
+  // {
+  //   img: l13,
+  //   title: "CG GALLERY",
+  // },
   {
     img: l14,
     title: "CG GALLERY",

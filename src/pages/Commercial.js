@@ -37,7 +37,7 @@ import p30 from "./assets/commercial/p30.jpg";
 
 export default function Commercial() {
   return (
-    <Box sx={{ maxWidth: "90%", margin: "auto" }}>
+    <Box sx={{ width: "90%", maxWidth: "1080px", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">

@@ -42,7 +42,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
       opacity: 0,
     },
     "& .MuiTypography-root": {
-      border: "4px solid currentColor",
+      border: "2px solid currentColor",
+      borderRadius: "5px",
     },
   },
 }));
@@ -102,7 +103,7 @@ export default function Photography() {
     >
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "50%" }}
+        style={{ height: "550px", width: "50%" }}
         href="/commercial"
       >
         <ImageSrc style={{ backgroundImage: `url(${p11})` }} />
@@ -110,7 +111,7 @@ export default function Photography() {
         <Image>
           <Typography
             component="span"
-            variant="h5"
+            variant="h4"
             color="inherit"
             sx={{
               position: "relative",
@@ -126,7 +127,7 @@ export default function Photography() {
       </ImageButton>{" "}
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "50%" }}
+        style={{ height: "550px", width: "50%" }}
         href="/automotive"
       >
         <ImageSrc style={{ backgroundImage: `url(${p6})` }} />
@@ -134,7 +135,7 @@ export default function Photography() {
         <Image>
           <Typography
             component="span"
-            variant="h5"
+            variant="h4"
             color="inherit"
             sx={{
               position: "relative",
@@ -150,7 +151,7 @@ export default function Photography() {
       </ImageButton>
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "50%" }}
+        style={{ height: "550px", width: "50%" }}
         href="/people"
       >
         <ImageSrc style={{ backgroundImage: `url(${p10})` }} />
@@ -158,7 +159,7 @@ export default function Photography() {
         <Image>
           <Typography
             component="span"
-            variant="h5"
+            variant="h4"
             color="inherit"
             sx={{
               position: "relative",
@@ -174,15 +175,15 @@ export default function Photography() {
       </ImageButton>
       <ImageButton
         focusRipple
-        style={{ height: "450px", width: "50%" }}
+        style={{ height: "550px", width: "50%" }}
         href="/gallery"
       >
-        <ImageSrc style={{ backgroundImage: `url(${l12})` }} />
+        <ImageSrc style={{ backgroundImage: `url(${l12})`, position: "end" }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
           <Typography
             component="span"
-            variant="h5"
+            variant="h4"
             color="inherit"
             sx={{
               position: "relative",

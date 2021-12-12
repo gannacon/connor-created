@@ -4,6 +4,8 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
+
 import p1 from "./assets/automotive/p1.jpg";
 import p2 from "./assets/automotive/p2.jpg";
 import p3 from "./assets/automotive/p3.jpg";
@@ -28,10 +30,15 @@ import p18 from "./assets/automotive/p18.jpg";
 // import l22 from "./assets/automotive/l22.jpg";
 // import l23 from "./assets/automotive/l23.jpg";
 // import l24 from "./assets/automotive/l24.jpg";
-
 export default function Automotive() {
   return (
-    <Box sx={{ width: "90%", margin: "auto" }}>
+    <Box
+      sx={{
+        width: "90%",
+        maxWidth: "1080px",
+        margin: "auto",
+      }}
+    >
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
@@ -39,7 +46,7 @@ export default function Automotive() {
           </Typography>
         </Divider>
       </Box>
-      <ImageList variant="masonry" cols={2} gap={8}>
+      <ImageList variant="masonry" cols={1} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img

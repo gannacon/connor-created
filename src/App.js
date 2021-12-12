@@ -8,6 +8,7 @@ import Automotive from "./pages/Automotive";
 import People from "./pages/People";
 import Commercial from "./pages/Commercial";
 import Photography from "./pages/Photography";
+import Gear from "./pages/Gear";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import ComingSoon from "./pages/ComingSoon";
@@ -126,6 +127,7 @@ export default function App(ScrollToTop) {
           <Route exact path="automotive" element={<Automotive />} />
           <Route exact path="people" element={<People />} />
           <Route exact path="commercial" element={<Commercial />} />
+          <Route exact path="gear" element={<Gear />} />
           {/* <Route exact path="contact" element={<Contact />} /> */}
           <Route exact path="photography" element={<Photography />} />
           {/* <Route exact path="footer" element={<Footer />} /> */}

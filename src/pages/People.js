@@ -28,7 +28,7 @@ import p20 from "./assets/people/p20.jpg";
 
 export default function People() {
   return (
-    <Box sx={{ maxWidth: "60%", margin: "auto" }}>
+    <Box sx={{ width: "90%", maxWidth: "1080px", margin: "auto" }}>
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Divider>
           <Typography align="center" variant="h4">
