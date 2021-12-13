@@ -5,6 +5,7 @@ import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import Typography from "@mui/material/Typography";
 import gear1 from "./assets/images/gear1.jpg";
@@ -37,55 +38,76 @@ export default function TitlebarBelowImageList() {
         margin: "auto",
       }}
     >
-      <Box sx={{ maxWidth: 800, margin: "auto" }}>
-        <Typography align="left" variant="h2">
-          My Gear
-        </Typography>
-      </Box>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={8}>
-          <Typography align="right" variant="h5">
-            Does gear really matter?
-          </Typography>{" "}
+      <Typography align="left" variant="h2">
+        My Gear
+      </Typography>
+      <Divider />
+      <Typography align="left" variant="h4" p="5px">
+        Does gear really matter?
+      </Typography>
+      <br />
+      <Typography align="left" variant="paragraph" pb="10px">
+        Yes. It does. To be able to provide the best quality to my clients I
+        stay up to date on the latest technology and trends. I invest heavily
+        into my gear which allows me to produce faster and provide the best.
+      </Typography>
+      <br />
+      <br />
+      <br />
+      <br />
+      <ParallaxProvider>
+        {" "}
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={4}>
+            <Parallax y={[20, -20]}>
+              <Card flex="end" elevation="24">
+                <CardMedia
+                  component="img"
+                  image={gear3}
+                  elevation="24"
+                  outline="none"
+                ></CardMedia>
+              </Card>
+            </Parallax>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Typography align="left" variant="paragraph">
+              This is my 2021 MacBook Pro. With the amount of photo editing I do
+              I wanted speed, power, and a large screen. So naturally I had to
+              go for the 16" with the i9. <br /> -Does it work? <br /> -Yes.{" "}
+              <br />
+              It's fast, bright, and never freezes. The trackpad is unmatched
+              and multitasking is incredible. <br /> -Do I recommend it? <br />{" "}
+              -No. <br />
+              This is a screaming space heater. Just exporting from Adobe
+              Lightroom starts the turbines. Working in laptop mode while
+              developing on localhost my palms have to elevate to avoid third
+              degree burns. I eagerly await an M1.
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <Card elevation="24">
-            <CardMedia
-              component="img"
-              image={gear1}
-              elevation="24"
-              outline="none"
-            ></CardMedia>
-          </Card>
-        </Grid>
-        <Grid item xs={6} md={4}>
-          <Item>xs=6 md=4</Item>
-        </Grid>
-        <Grid item xs={6} md={8}>
-          <Item>xs=6 md=8</Item>
-        </Grid>
-      </Grid>
+      </ParallaxProvider>
     </Box>
   );
 }
 
-const itemData = [
-  {
-    img: gear3,
-    title: "2021 MacBook Pro 16 i9",
-  },
-  {
-    img: gear4,
-    title: "iPad Pro 12.9in 3rd Gen",
-  },
-  {
-    img: gear1,
-    title: "Camera Body",
-    subtitle: "Sony A7iii",
-  },
-  {
-    img: gear2,
-    title: "Glass",
-    subtitle: "Sony 70-200mm F4, Sigma 35mm F1.4, Laowa 16mm F4",
-  },
-];
+// const itemData = [
+//   {
+//     img: gear3,
+//     title: "2021 MacBook Pro 16 i9",
+//   },
+//   {
+//     img: gear4,
+//     title: "iPad Pro 12.9in 3rd Gen",
+//   },
+//   {
+//     img: gear1,
+//     title: "Camera Body",
+//     subtitle: "Sony A7iii",
+//   },
+//   {
+//     img: gear2,
+//     title: "Glass",
+//     subtitle: "Sony 70-200mm F4, Sigma 35mm F1.4, Laowa 16mm F4",
+//   },
+// ];

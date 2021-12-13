@@ -14,6 +14,8 @@ import LogoIcon from "../pages/assets/images/logo.svg";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import PropTypes from "prop-types";
 import DrawerContent from "./assets/DrawerContent";
+import Link from "@mui/material/Link";
+
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Icon from "@mui/material/Icon";
 
@@ -124,7 +126,9 @@ export default function PersistentDrawerLeft(props) {
             </IconButton>
 
             <Typography margin="auto" variant="h5">
-              CONNOR CREATED
+              <Link href="/" color="text.primary" underline="none">
+                CONNOR CREATED
+              </Link>
             </Typography>
 
             <Box
