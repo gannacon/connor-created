@@ -2,6 +2,9 @@
   "name": "connor-created",
   "homepage": "https://www.connorcreated.com/",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.5.0",
