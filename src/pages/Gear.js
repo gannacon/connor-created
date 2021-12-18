@@ -6,7 +6,6 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import Image from "material-ui-image";
 
 import Typography from "@mui/material/Typography";
 import gear1 from "./assets/images/gear1.jpg";
