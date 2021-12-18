@@ -67,9 +67,9 @@ export default function CustomizedAccordions() {
         <ListItemLink href="/photography">
           <ListItemText primary="PHOTOGRAPHY" />
         </ListItemLink>
-        {/* <ListItemLink href="/gear">
+        <ListItemLink href="/gear">
           <ListItemText primary="MY GEAR" />
-        </ListItemLink> */}
+        </ListItemLink>
 
         {/* <Accordion
           expanded={expanded === "panel2"}

@@ -13,7 +13,6 @@ import gear2 from "./assets/images/gear2.jpg";
 import gear3 from "./assets/images/gear3.jpg";
 import gear4 from "./assets/images/gear4.jpg";
 // import gear5 from "./assets/images/gear5.jpg";
-
 export default function TitlebarBelowImageList() {
   const theme = useTheme();
 
