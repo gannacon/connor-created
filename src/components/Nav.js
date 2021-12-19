@@ -131,7 +131,7 @@ export default function PersistentDrawerLeft(props) {
               </Link>
             </Typography>
 
-            <Box
+            {/* <Box
               color="#fff"
               component="img"
               sx={{
@@ -142,7 +142,7 @@ export default function PersistentDrawerLeft(props) {
               }}
               alt="CG Logo"
               src={LogoIcon}
-            />
+            /> */}
           </Toolbar>
         </AppBar>
       </ElevationScroll>

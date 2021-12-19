@@ -74,6 +74,16 @@ export default function App(ScrollToTop) {
           mode,
           ...(mode === "light"
             ? {
+                // primary: grey,
+                // divider: grey[700],
+                // background: {
+                //   default: grey[900],
+                //   paper: grey[900],
+                // },
+                // text: {
+                //   primary: "#fff",
+                //   secondary: grey[500],
+                // },
                 // palette values for light mode
                 primary: {
                   light: grey[50],
