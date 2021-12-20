@@ -88,7 +88,7 @@ export default function TitlebarBelowImageList() {
 
         <Grid container spacing={2}>
           <Grid pr="25px" align="right" xs={12} md={8}>
-            <Typography variant="h6">Camer Body</Typography>
+            <Typography variant="h6">Camera Body</Typography>
             <Typography align="right" variant="paragraph">
               Sony A7iii
               <br />

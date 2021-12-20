@@ -56,12 +56,13 @@ export default function Home() {
         <Typography mb="25px" variant="h3">
           Are you in need of a Web Developer?
         </Typography>
-        <Typography variant="h4">I believe I can help.</Typography>
+        <Typography variant="h4">I can help.</Typography>
         <Box sx={{ m: "5px" }}>
           <Typography variant="subtitle">
-            I recently completed a 6 month course building websites, web apps,
-            databases, and so much more. My github portfolio showcases all the
-            projects and homeworks I completed in that time.
+            I recently completed a 6 month course at the University of Kansas
+            building websites, web apps, databases, and so much more. My github
+            portfolio showcases all the projects and homeworks I completed in
+            that time.
           </Typography>
         </Box>
 
