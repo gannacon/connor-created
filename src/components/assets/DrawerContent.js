@@ -5,6 +5,8 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
@@ -61,9 +63,9 @@ export default function CustomizedAccordions() {
           <ListItemText primary="HOME" />
         </ListItemLink>
 
-        {/* <ListItemLink href="/#/webdevelopment">
-          <ListItemText primary="Web Development" />
-        </ListItemLink> */}
+        <ListItemLink href="/webdevelopment">
+          <ListItemText primary="WEB DEVELOPMENT" />
+        </ListItemLink>
         <ListItemLink href="/photography">
           <ListItemText primary="PHOTOGRAPHY" />
         </ListItemLink>
@@ -107,6 +109,17 @@ export default function CustomizedAccordions() {
           <ListItemText primary="Contact Me" />
         </ListItemLink> */}
       </List>
+      <Box>
+        <Button
+          href="https://www.gannaway.org/"
+          target="blank"
+          sx={{ m: "10px" }}
+          variant="contained"
+          size="large"
+        >
+          Contact Me
+        </Button>
+      </Box>
     </div>
   );
 }

@@ -32,12 +32,12 @@ function FeaturedPost() {
         <Box margin="auto" sx={{ maxWidth: "1080px" }}>
           <Typography
             component="h1"
-            variant="h4"
+            variant="h3"
             color="inherit"
             gutterBottom
             pb="30px"
           >
-            Here are some of my most recent development projects:
+            Some of my most recent development projects:
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>

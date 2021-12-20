@@ -128,7 +128,7 @@ export default function TitlebarBelowImageList() {
               <br />
               -I use this lense heavily for commercial work and it does a great
               job. The manual focus is a chore but forces me to focus more on
-              getting the photo perfect.
+              getting the perfect photo.
               <br />
               Sigma 35mm f1.4
               <br />

@@ -79,7 +79,7 @@ export default function Home() {
           {slider}
           <br />
           <Box align="center" sx={{ align: "center", margin: "auto" }}> */}
-        <Typography align="center" variant="h5">
+        <Typography align="center" variant="h4">
           Here is a little bit of everything I can do:
           <br />
           <ArrowDownwardIcon />
