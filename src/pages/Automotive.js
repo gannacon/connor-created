@@ -24,6 +24,9 @@ import p15 from "./assets/automotive/p15.jpg";
 import p16 from "./assets/automotive/p16.jpg";
 import p17 from "./assets/automotive/p17.jpg";
 import p18 from "./assets/automotive/p18.jpg";
+import p19 from "./assets/automotive/p19.jpg";
+import p20 from "./assets/automotive/p20.jpg";
+import p21 from "./assets/automotive/p21.jpg";
 // import l19 from "./assets/automotive/l19.jpg";
 // import l20 from "./assets/automotive/l20.jpg";
 // import l21 from "./assets/automotive/l21.jpg";
@@ -135,6 +138,18 @@ const itemData = [
   },
   {
     img: p18,
+    title: "CG AUTO",
+  },
+  {
+    img: p19,
+    title: "CG AUTO",
+  },
+  {
+    img: p20,
+    title: "CG AUTO",
+  },
+  {
+    img: p21,
     title: "CG AUTO",
   },
 ];
