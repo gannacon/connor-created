@@ -35,7 +35,7 @@ function FeaturedPost() {
             variant="h3"
             color="inherit"
             gutterBottom
-            pb="30px"
+            pb="40px"
           >
             Some of my most recent development projects:
           </Typography>
