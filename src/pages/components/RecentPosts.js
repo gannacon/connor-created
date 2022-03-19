@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 import CHSLogo from "../assets/images/CHSLOGO.jpg";
 import pbm from "../assets/images/pbm.jpg";
 import pbmlogo from "../assets/images/pbmlogo.png";
-import KPAHistoric from "../assets/images/historicdepot.jpg";
+import VikingLogo from "../assets/images/VikingLogo.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
@@ -45,6 +45,34 @@ function FeaturedPost() {
                 <Card elevation="24" sx={{ maxWidth: 345, margin: "auto" }}>
                   <CardActionArea
                     target="_blank"
+                    href="https://www.vikingathleticgoods.com/"
+                  >
+                    <CardMedia
+                      component="img"
+                      width="140"
+                      image={VikingLogo}
+                      alt="Missouri Valley College"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Viking Athletic Goods
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Website redesign.
+                      </Typography>
+                      <Typography variant="subtitle1" color="Inherit">
+                        Tap to see the final product
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Parallax>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Parallax y={[20, -30]}>
+                <Card elevation="24" sx={{ maxWidth: 345, margin: "auto" }}>
+                  <CardActionArea
+                    target="_blank"
                     href="https://www.curtishomesolutions.com/"
                   >
                     <CardMedia
@@ -69,7 +97,6 @@ function FeaturedPost() {
                 </Card>
               </Parallax>
             </Grid>
-
             <Grid item xs={12} md={4}>
               <Parallax y={[20, -30]}>
                 <Card elevation="24" sx={{ maxWidth: 345, margin: "auto" }}>
@@ -89,34 +116,6 @@ function FeaturedPost() {
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
                         Photography Portfolio. Website, Email, Logo Design.
-                      </Typography>
-                      <Typography variant="subtitle1" color="Inherit">
-                        Tap to see the final product
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Parallax>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Parallax y={[20, -30]}>
-                <Card elevation="24" sx={{ maxWidth: 345, margin: "auto" }}>
-                  <CardActionArea
-                    target="_blank"
-                    href="https://kansaspreservationalliance.org/"
-                  >
-                    <CardMedia
-                      component="img"
-                      width="140"
-                      image={KPAHistoric}
-                      alt="KPA Historic Depot"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Kansas Preservation Alliance{" "}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Website redesign. Email.
                       </Typography>
                       <Typography variant="subtitle1" color="Inherit">
                         Tap to see the final product
