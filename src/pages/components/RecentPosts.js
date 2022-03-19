@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 import CHSLogo from "../assets/images/CHSLOGO.jpg";
 import pbm from "../assets/images/pbm.jpg";
 import pbmlogo from "../assets/images/pbmlogo.png";
-import VikingLogo from "../assets/images/VikingLogo.jpg";
+import VikingLogo from "../assets/images/vikinglogo.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
