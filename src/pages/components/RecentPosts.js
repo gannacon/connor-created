@@ -71,10 +71,7 @@ function FeaturedPost() {
             <Grid item xs={12} md={4}>
               <Parallax y={[20, -30]}>
                 <Card elevation="24" sx={{ maxWidth: 345, margin: "auto" }}>
-                  <CardActionArea
-                    target="_blank"
-                    href="https://www.curtishomesolutions.com/"
-                  >
+                  <CardActionArea href="/CHSbranding">
                     <CardMedia
                       component="img"
                       width="140"
