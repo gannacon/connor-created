@@ -24,7 +24,7 @@ export default function CHSbranding() {
       <Box sx={{ maxWidth: 800, margin: "auto" }}>
         <Typography align="center" variant="h5">
           For my client "Curtis Home Solutions" I provided a full business
-          startup package. This includes logo and branding creation shown below.
+          startup package. This includes logo and branding creation shown below:
         </Typography>
       </Box>
 
